@@ -1,0 +1,104 @@
+# Refugee Connect - Multimodal Requirements
+# Hardware Pivot: Pi Station → Dell Mini PC with Multimodal Gemma 3n
+
+# Core web framework (existing)
+Flask==2.3.3
+Flask-CORS==4.0.0
+waitress==2.1.2
+
+# System monitoring (existing)
+psutil==5.9.6
+
+# Image processing for development
+Pillow==10.0.1
+
+# Production multimodal dependencies (only installed on Dell Mini PC)
+# These will be installed during deployment phase, NOT during development
+
+# PyTorch ecosystem for multimodal model
+# torch==2.1.0  # Installed via deployment script
+# torchvision==0.16.0  # Installed via deployment script
+# torchaudio==2.1.0  # Installed via deployment script
+
+# Hugging Face transformers for multimodal Gemma
+# transformers==4.35.0  # Installed via deployment script
+# accelerate==0.24.0  # Installed via deployment script
+
+# Additional multimodal processing
+# tokenizers==0.14.1  # Installed via deployment script
+# safetensors==0.4.0  # Installed via deployment script
+
+# CUDA support (if available)
+# nvidia-cublas-cu12  # Installed via deployment script
+# nvidia-cuda-runtime-cu12  # Installed via deployment script
+
+# Development-only dependencies (safe for 16GB laptop)
+# For testing and development without actual model loading
+responses==0.23.3
+pytest==7.4.3
+pytest-asyncio==0.21.1
+mock==5.1.0
+
+# Audio processing support (for future audio features)
+# librosa==0.10.1  # Installed via deployment script
+# soundfile==0.12.1  # Installed via deployment script
+
+# Additional utilities
+numpy==1.24.3
+requests==2.31.0
+python-dateutil==2.8.2
+
+# Development tools
+black==23.7.0
+flake8==6.0.0
+isort==5.12.0
+
+# Memory profiling for development
+memory-profiler==0.61.0
+
+# JSON handling
+orjson==3.9.7
+
+# Base64 and image utilities
+base64io==1.0.3
+
+# Async support
+aiofiles==23.2.1
+asyncio-throttle==1.0.2
+
+# Logging and monitoring
+structlog==23.1.0
+colorlog==6.7.0
+
+# Security utilities
+cryptography==41.0.7
+bcrypt==4.0.1
+
+# Configuration management
+python-dotenv==1.0.0
+pydantic==2.4.2
+
+# HTTP utilities
+httpx==0.24.1
+urllib3==2.0.7
+
+# Time utilities
+pytz==2023.3
+
+# File handling
+pathlib2==2.3.7
+watchdog==3.0.0
+
+# Testing utilities
+factory-boy==3.3.0
+faker==19.6.2
+
+# Performance monitoring
+py-spy==0.3.14
+
+# Development server
+gunicorn==21.2.0
+
+# Note: Heavy dependencies like torch, transformers, etc. are commented out
+# They will be installed via deployment script only on Dell Mini PC with 32GB RAM
+# This ensures safe development on 16GB laptop with mock implementations

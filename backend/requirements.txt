@@ -1,0 +1,21 @@
+# Refugee Connect AI Server - Offline Humanitarian AI
+# Minimal dependencies for complete offline operation
+# Works on both laptop (testing) and Raspberry Pi 5 (deployment)
+
+# Core web server
+flask==3.0.0
+flask-cors==4.0.0
+waitress==3.0.0
+
+# GGUF model inference (offline AI) - Updated for Gemma 3n support
+llama-cpp-python>=0.3.12
+
+# System monitoring
+psutil==5.9.0
+
+# Note: For installation on Raspberry Pi without internet:
+# 1. Download wheels on a connected machine:
+#    pip download -r requirements.txt -d ./offline_wheels/
+# 2. Transfer offline_wheels/ folder to Pi
+# 3. Install offline:
+#    pip install --no-index --find-links ./offline_wheels/ -r requirements.txt
