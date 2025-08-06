@@ -1,0 +1,1618 @@
+{
+  "math": {
+    "age3_5": {
+      "week1": {
+        "topic": "Counting with Our Bodies",
+        "objectives": ["Count to 5 using fingers", "Recognize numbers in daily life"],
+        "activities": [
+          "Count fingers and toes together",
+          "Sort stones into groups of 1-5",
+          "Clap and count rhythm games",
+          "Count family members and neighbors"
+        ],
+        "materials": "Hands, feet, small stones, bottle caps",
+        "assessment": "Can count to 5 independently using fingers",
+        "content": {
+          "introduction": "Numbers help us share food fairly and keep track of our belongings. Let's learn to count using what we always have - our bodies!",
+          "steps": [
+            "Start by wiggling fingers - count each one slowly",
+            "Practice showing numbers 1-5 with one hand",
+            "Collect 5 small stones, match to fingers",
+            "Hide some stones, count what's left",
+            "Count important items: water bottles, family members"
+          ],
+          "tips": [
+            "Count in child's native language first, then camp common language",
+            "Use gentle touch to help child feel each finger while counting",
+            "If stones unavailable, use bottle caps or draw in dirt",
+            "Celebrate each successful count with claps or smiles"
+          ],
+          "games": [
+            "Finger Hide: Hide fingers behind back, show a number",
+            "Stone Toss: Toss stones in circle drawn in dirt, count them",
+            "Family Count: How many people in our shelter? Count together"
+          ]
+        }
+      },
+      "week2": {
+        "topic": "Shapes in Our Shelter",
+        "objectives": ["Identify circles, squares, triangles", "Find shapes in everyday items"],
+        "activities": [
+          "Draw shapes in dirt or sand",
+          "Find round objects like bucket tops",
+          "Make shapes with sticks or string",
+          "Shape hunt around living area"
+        ],
+        "materials": "Sticks, string, dirt for drawing, everyday objects",
+        "assessment": "Can name and draw basic shapes",
+        "content": {
+          "introduction": "Shapes are everywhere in our camp - from round water containers to square blankets. Let's discover shapes all around us!",
+          "steps": [
+            "Draw a circle in dirt - trace around a bottle cap",
+            "Find three sticks to make a triangle",
+            "Look for squares in shelter walls or blankets",
+            "Create shape combinations with found objects",
+            "Play 'I Spy' with shapes around camp"
+          ],
+          "tips": [
+            "Start with one shape per day to avoid confusion",
+            "Use real objects child sees daily for connection",
+            "Encourage tracing shapes with finger first",
+            "Accept imperfect shapes - focus on concept understanding"
+          ],
+          "games": [
+            "Shape Walk: Find one circle, square, triangle on short walk",
+            "Body Shapes: Make circles with arms, triangles with fingers",
+            "Shape Sort: Sort bottle caps, stones by round or not round"
+          ]
+        }
+      },
+      "week3": {
+        "topic": "More or Less",
+        "objectives": ["Compare quantities", "Understand concepts of more, less, same"],
+        "activities": [
+          "Compare piles of stones or caps",
+          "Share items equally between people",
+          "Fill containers with different amounts",
+          "Practice 'fair sharing' games"
+        ],
+        "materials": "Stones, bottle caps, containers, dried beans or rice",
+        "assessment": "Can identify which group has more/less items",
+        "content": {
+          "introduction": "When we share food or water, we need to know about more and less. Let's practice so everyone gets their fair share!",
+          "steps": [
+            "Make two piles of stones - one big, one small",
+            "Ask child which has more, which has less",
+            "Make piles the same size - introduce 'equal'",
+            "Practice with real scenarios - sharing food items",
+            "Let child be the 'fair share' helper for family"
+          ],
+          "tips": [
+            "Use visual comparison before counting",
+            "Connect to real sharing situations in camp",
+            "Let child physically move items between piles",
+            "Praise fairness and sharing behaviors"
+          ],
+          "games": [
+            "Fill the Cup: Who can put more stones in their cup?",
+            "Fair Share: Divide bottle caps equally between dolls/toys",
+            "More or Less Moves: Jump more times, clap less times"
+          ]
+        }
+      },
+      "week4": {
+        "topic": "Patterns in Daily Life",
+        "objectives": ["Recognize simple patterns", "Create AB patterns"],
+        "activities": [
+          "Make stone-stick-stone patterns",
+          "Clap-stomp rhythm patterns",
+          "Arrange colored bottle caps in patterns",
+          "Find patterns in daily routines"
+        ],
+        "materials": "Stones, sticks, bottle caps, natural materials",
+        "assessment": "Can continue a simple AB pattern independently",
+        "content": {
+          "introduction": "Patterns help us predict what comes next - like day following night. Let's make patterns with things around us!",
+          "steps": [
+            "Start with stone-stick-stone on ground",
+            "Ask what comes next? Help child continue",
+            "Try cap-cap-stone-cap-cap-stone pattern",
+            "Create body patterns: clap-stomp-clap-stomp",
+            "Find patterns in daily life: eat-sleep-eat-sleep"
+          ],
+          "tips": [
+            "Start with two-item patterns only",
+            "Use child's choices for pattern materials",
+            "Make patterns left to right for reading preparation",
+            "Connect patterns to predictable daily routines"
+          ],
+          "games": [
+            "Pattern Dance: Step-step-jump pattern across space",
+            "Pattern Chain: Each person adds to group pattern",
+            "Pattern Hunt: Find patterns in shelter materials or clothing"
+          ]
+        }
+      }
+    },
+    "age5_7": {
+      "week1": {
+        "topic": "Counting to 20 for Camp Life",
+        "objectives": ["Count to 20 accurately", "Use counting for daily tasks"],
+        "activities": [
+          "Count water containers in distribution line",
+          "Track days using stone calendar",
+          "Count steps to important camp locations",
+          "Practice skip counting by 2s"
+        ],
+        "materials": "Stones, sticks, bottle caps, beans or lentils",
+        "assessment": "Can count 20 objects accurately and use counting practically",
+        "content": {
+          "introduction": "Counting helps us keep track of supplies and time. Let's learn to count to 20 using things we see every day in camp!",
+          "steps": [
+            "Review counting to 10 with fingers, then add toes",
+            "Make groups of 10 stones, add more to reach 20",
+            "Count real items: people in food line, water containers",
+            "Practice counting backwards from 10",
+            "Create a 'days until' counting system for events"
+          ],
+          "tips": [
+            "Count in multiple languages if child is multilingual",
+            "Use real camp situations for meaningful practice",
+            "Let child be the 'counter' for family tasks",
+            "Celebrate reaching 20 as big achievement"
+          ],
+          "games": [
+            "20 Steps Game: Count steps to reach destinations",
+            "Container Count: How many bottle caps fill small container?",
+            "Countdown Launch: Count backwards and jump high at zero"
+          ]
+        }
+      },
+      "week2": {
+        "topic": "Simple Addition with Supplies",
+        "objectives": ["Add numbers up to 10", "Solve real sharing problems"],
+        "activities": [
+          "Combine food portions for family count",
+          "Add stones to represent people",
+          "Use fingers for addition stories",
+          "Solve 'how many altogether' problems"
+        ],
+        "materials": "Stones, bottle caps, fingers, food items",
+        "assessment": "Can solve simple addition problems using objects",
+        "content": {
+          "introduction": "Adding helps us know how much we have altogether. This is important when sharing food or supplies with our family and friends!",
+          "steps": [
+            "Start with 3 stones, add 2 more, count total",
+            "Use fingers: show 4 on one hand, 3 on other, count all",
+            "Create story: '2 people here, 3 more come, how many now?'",
+            "Practice with real items during meals",
+            "Draw addition pictures in dirt"
+          ],
+          "tips": [
+            "Always use concrete objects before abstract numbers",
+            "Create stories relevant to child's daily life",
+            "Allow child to physically move objects when adding",
+            "Keep numbers small (under 10) initially"
+          ],
+          "games": [
+            "Supply Collector: Roll stones, add to previous total",
+            "Family Addition: Add family members as they arrive",
+            "Addition Hop: Hop number of times for each addend"
+          ]
+        }
+      },
+      "week3": {
+        "topic": "Subtraction and Sharing",
+        "objectives": ["Subtract numbers up to 10", "Understand 'taking away'"],
+        "activities": [
+          "Practice sharing equally and counting remainder",
+          "Remove items and count what's left",
+          "Solve 'how many left' problems",
+          "Use subtraction for fair distribution"
+        ],
+        "materials": "Stones, bottle caps, food items for demonstration",
+        "assessment": "Can solve take-away problems with objects",
+        "content": {
+          "introduction": "Sometimes we share or use things, and need to know how many are left. Let's learn to subtract by taking away!",
+          "steps": [
+            "Start with 5 stones, take away 2, count remainder",
+            "Tell stories: '6 bottles of water, use 2, how many left?'",
+            "Practice with snack sharing scenarios",
+            "Use crossing out method - draw items, cross out",
+            "Connect to daily supply management"
+          ],
+          "tips": [
+            "Frame subtraction as sharing or using, not losing",
+            "Let child physically remove objects",
+            "Start with small numbers (5 or less)",
+            "Emphasize counting what remains"
+          ],
+          "games": [
+            "Sharing Game: Start with 10 caps, share with friends",
+            "Disappearing Stones: Hide some stones, count what's left",
+            "Subtraction Jump: Jump backwards while counting down"
+          ]
+        }
+      },
+      "week4": {
+        "topic": "Measuring Without Rulers",
+        "objectives": ["Use body parts to measure", "Compare lengths and heights"],
+        "activities": [
+          "Measure shelter items with hand spans",
+          "Use foot lengths for distance",
+          "Compare heights with string or sticks",
+          "Create measuring records with marks"
+        ],
+        "materials": "String, sticks, dirt for marking, body parts",
+        "assessment": "Can measure items using non-standard units",
+        "content": {
+          "introduction": "We can measure things using our bodies! This helps us know sizes and distances even without rulers.",
+          "steps": [
+            "Introduce hand span - measure blanket width",
+            "Use foot lengths to measure shelter space",
+            "Compare two sticks - which is longer?",
+            "Measure same item with adult and child hands",
+            "Record measurements with marks or stones"
+          ],
+          "tips": [
+            "Emphasize that different people get different numbers",
+            "Use measurements for practical purposes",
+            "Let child predict before measuring",
+            "Celebrate creative measuring solutions"
+          ],
+          "games": [
+            "Giant Steps: Measure distances with big and baby steps",
+            "Height Marks: Mark family heights on shelter post",
+            "Measurement Hunt: Find things exactly one hand span long"
+          ]
+        }
+      }
+    },
+    "age7_10": {
+      "week1": {
+        "topic": "Numbers to 100 for Resource Management",
+        "objectives": ["Count to 100", "Understand place value basics"],
+        "activities": [
+          "Create 10-groups with stones or beans",
+          "Make a 100-square with bottle caps",
+          "Count by 10s for faster counting",
+          "Track supplies using tally marks"
+        ],
+        "materials": "100 small objects (stones, beans), containers, dirt for writing",
+        "assessment": "Can count to 100 and group by tens efficiently",
+        "content": {
+          "introduction": "Large numbers help us track important supplies and time. Let's master counting to 100 using grouping strategies!",
+          "steps": [
+            "Count 10 objects, put in container, repeat for 10 groups",
+            "Practice counting by 10s: 10, 20, 30... to 100",
+            "Count mixed amounts: 3 tens and 5 ones = 35",
+            "Create visual 100 square with 10 rows of 10",
+            "Apply to real counting: days, people, supplies"
+          ],
+          "tips": [
+            "Use containers or circles drawn in dirt for grouping",
+            "Connect to real inventory management in camp",
+            "Allow child to develop their own grouping system",
+            "Practice regularly with different materials"
+          ],
+          "games": [
+            "Race to 100: Who can group 100 items fastest?",
+            "Number Detective: Find numbers between 1-100 around camp",
+            "Skip Count Challenge: Count by 2s, 5s, 10s with movements"
+          ]
+        }
+      },
+      "week2": {
+        "topic": "Multiplication for Distribution",
+        "objectives": ["Understand multiplication as groups", "Learn 2, 5, 10 times tables"],
+        "activities": [
+          "Arrange items in equal groups",
+          "Skip count to find totals",
+          "Solve distribution problems",
+          "Create multiplication arrays in dirt"
+        ],
+        "materials": "Stones, bottle caps, beans, dirt for drawing",
+        "assessment": "Can solve simple multiplication using grouping",
+        "content": {
+          "introduction": "Multiplication helps us quickly count equal groups - useful when distributing supplies to many families!",
+          "steps": [
+            "Make 3 groups of 2 stones - count all (2+2+2=6)",
+            "Show this as 3×2=6 using symbols in dirt",
+            "Practice with real scenarios: 4 families, 5 items each",
+            "Create arrays: 3 rows of 4 stones",
+            "Learn key facts: 2s, 5s, 10s for quick counting"
+          ],
+          "tips": [
+            "Always start with physical grouping",
+            "Use distribution scenarios from camp life",
+            "Build arrays before introducing symbols",
+            "Celebrate understanding the concept over memorization"
+          ],
+          "games": [
+            "Group Race: Quickly arrange items in equal groups",
+            "Array Builder: Create different arrays for same product",
+            "Distribution Helper: Calculate supplies for X families"
+          ]
+        }
+      },
+      "week3": {
+        "topic": "Division and Fair Sharing",
+        "objectives": ["Understand division as sharing", "Divide quantities equally"],
+        "activities": [
+          "Distribute items equally among people",
+          "Find how many groups can be made",
+          "Handle remainders in sharing",
+          "Solve real camp distribution problems"
+        ],
+        "materials": "Stones, food items, containers, bottle caps",
+        "assessment": "Can divide quantities fairly and explain remainders",
+        "content": {
+          "introduction": "Division ensures everyone gets a fair share. This is crucial for distributing food, water, and supplies in our community!",
+          "steps": [
+            "Start with 12 stones, share among 3 people",
+            "Count how many each person gets (4)",
+            "Try 13 stones among 3 - introduce remainders",
+            "Practice with real items: food portions, water",
+            "Create division stories from daily life"
+          ],
+          "tips": [
+            "Emphasize fairness and community sharing",
+            "Use actual distribution scenarios when possible",
+            "Show that remainders can be saved or shared differently",
+            "Let child be the 'distribution officer'"
+          ],
+          "games": [
+            "Fair Share Challenge: Divide various amounts fairly",
+            "Group Maker: How many groups of 4 from 20 items?",
+            "Remainder Solutions: Creative ways to handle extra items"
+          ]
+        }
+      },
+      "week4": {
+        "topic": "Time and Scheduling",
+        "objectives": ["Tell time using sun position", "Understand days, weeks, months"],
+        "activities": [
+          "Create shadow clock with stick",
+          "Make calendar with stones",
+          "Plan daily schedule using time concepts",
+          "Track important camp events"
+        ],
+        "materials": "Stick for sundial, stones for calendar, dirt for drawing",
+        "assessment": "Can organize day by time periods and track dates",
+        "content": {
+          "introduction": "Understanding time helps us organize our day and prepare for important events like food distribution or medical visits.",
+          "steps": [
+            "Place stick in ground, observe shadow movement",
+            "Divide day into morning, noon, afternoon, evening",
+            "Create 7-day week calendar with stones",
+            "Mark important recurring events",
+            "Practice describing when things happen"
+          ],
+          "tips": [
+            "Connect time to camp routines and meals",
+            "Use natural markers like sun position",
+            "Make calendar personally meaningful with family events",
+            "Accept approximate times without clocks"
+          ],
+          "games": [
+            "Shadow Race: Predict where shadow will be later",
+            "Calendar Keeper: Child maintains family calendar",
+            "Time Estimation: Guess time based on sun and activities"
+          ]
+        }
+      }
+    }
+  },
+  "language": {
+    "age3_5": {
+      "week1": {
+        "topic": "Speaking and Listening Circle",
+        "objectives": ["Share simple thoughts", "Listen to others speak"],
+        "activities": [
+          "Daily sharing circle with family",
+          "Repeat simple phrases and sounds",
+          "Listen and respond to basic questions",
+          "Practice greetings in multiple languages"
+        ],
+        "materials": "Sitting space, optional talking stick",
+        "assessment": "Participates in conversation, attempts responses",
+        "content": {
+          "introduction": "Talking and listening help us share our feelings and needs. Let's practice using our words together every day!",
+          "steps": [
+            "Sit in circle, pass 'talking stick' (any object)",
+            "Each person says one thing: feeling, need, or observation",
+            "Practice active listening - look at speaker",
+            "Repeat what others say to show understanding",
+            "End with group sound or word"
+          ],
+          "tips": [
+            "Accept any language child uses comfortably",
+            "Model good listening by giving full attention",
+            "Keep sharing time very short for young children",
+            "Praise all attempts at communication"
+          ],
+          "games": [
+            "Echo Game: Repeat sounds and words back and forth",
+            "Greeting Circle: Practice hellos in different languages",
+            "Sound Hunt: Listen for and name camp sounds"
+          ]
+        }
+      },
+      "week2": {
+        "topic": "Story Pictures in Dirt",
+        "objectives": ["Create simple stories", "Connect pictures to meaning"],
+        "activities": [
+          "Draw simple pictures in dirt or sand",
+          "Tell story about the pictures",
+          "Act out simple stories with gestures",
+          "Create family story together"
+        ],
+        "materials": "Dirt or sand for drawing, stick for drawing tool",
+        "assessment": "Can tell simple story about their drawings",
+        "content": {
+          "introduction": "Stories help us remember and share. We can tell stories using pictures we draw in the ground!",
+          "steps": [
+            "Draw simple circle for sun or person",
+            "Ask child what happens next, add to drawing",
+            "Tell story together about the picture",
+            "Let child draw and tell their own story",
+            "Act out the story with movements"
+          ],
+          "tips": [
+            "Accept all drawings as valid storytelling",
+            "Add to child's story rather than correcting",
+            "Use native language for comfort",
+            "Save special stories by remembering together"
+          ],
+          "games": [
+            "Drawing Telephone: Pass story through drawings",
+            "Story Chain: Each person adds one part",
+            "Picture Feelings: Draw faces showing emotions"
+          ]
+        }
+      },
+      "week3": {
+        "topic": "Songs and Rhymes",
+        "objectives": ["Learn simple songs", "Recognize rhythm and rhyme"],
+        "activities": [
+          "Sing counting songs with movements",
+          "Create clapping rhymes",
+          "Learn lullabies from different cultures",
+          "Make up songs about daily activities"
+        ],
+        "materials": "Hands for clapping, voice, optional stones for rhythm",
+        "assessment": "Participates in singing and attempts rhyming sounds",
+        "content": {
+          "introduction": "Songs help us learn and remember. They make daily tasks more fun! Let's sing together!",
+          "steps": [
+            "Start with simple clapping rhythm",
+            "Add words to rhythm - numbers or daily tasks",
+            "Teach traditional song from family culture",
+            "Create new verses about camp life",
+            "Perform songs with full body movements"
+          ],
+          "tips": [
+            "Use songs from child's cultural background",
+            "Keep songs short and repetitive",
+            "Connect songs to daily routines",
+            "Let child create their own verses"
+          ],
+          "games": [
+            "Rhythm Echo: Copy clapping patterns",
+            "Song Actions: Add movements to familiar songs",
+            "Singing Tasks: Sing while doing daily activities"
+          ]
+        }
+      },
+      "week4": {
+        "topic": "Letter Shapes in Nature",
+        "objectives": ["Recognize basic letter shapes", "Find letters in environment"],
+        "activities": [
+          "Form letters with sticks and stones",
+          "Find letter shapes in surroundings",
+          "Trace letters in dirt or sand",
+          "Match objects to letter sounds"
+        ],
+        "materials": "Sticks, stones, dirt for drawing, natural objects",
+        "assessment": "Can identify some letter shapes in environment",
+        "content": {
+          "introduction": "Letters are special shapes that carry meaning. We can find and make letter shapes all around us!",
+          "steps": [
+            "Start with child's name initial - make with sticks",
+            "Find that letter shape in tent poles, paths",
+            "Practice drawing letter in dirt with finger",
+            "Collect objects starting with that sound",
+            "Gradually add more family initials"
+          ],
+          "tips": [
+            "Focus on uppercase letters initially",
+            "Connect letters to meaningful names",
+            "Accept approximate letter shapes",
+            "Use multiple scripts if family multilingual"
+          ],
+          "games": [
+            "Letter Hunt: Find letter shapes during walks",
+            "Body Letters: Make letters with arms and legs",
+            "Letter Collections: Sort objects by initial sounds"
+          ]
+        }
+      }
+    },
+    "age5_7": {
+      "week1": {
+        "topic": "Name Writing and Recognition",
+        "objectives": ["Write own name", "Recognize family names"],
+        "activities": [
+          "Practice name writing in dirt",
+          "Create name tags with sticks",
+          "Recognize names of family members",
+          "Decorate names with natural materials"
+        ],
+        "materials": "Sticks, stones, dirt, sand, found objects",
+        "assessment": "Can write first name and recognize family names",
+        "content": {
+          "introduction": "Our names are special! Learning to write them helps us label our belongings and feel proud of who we are.",
+          "steps": [
+            "Write child's name large in dirt, trace together",
+            "Break name into individual letters, practice each",
+            "Let child try independently with guidance",
+            "Write family member names for recognition",
+            "Create permanent name display with stones"
+          ],
+          "tips": [
+            "Start with first name only",
+            "Use native script if different from camp language",
+            "Make letter formation fun with stories",
+            "Display name proudly in living space"
+          ],
+          "games": [
+            "Name Museum: Create names with natural materials",
+            "Name Detective: Find letters from name around camp",
+            "Name Songs: Spell name to rhythm or tune"
+          ]
+        }
+      },
+      "week2": {
+        "topic": "Environmental Print Reading",
+        "objectives": ["Recognize common signs and symbols", "Understand print carries meaning"],
+        "activities": [
+          "Identify camp signs and symbols",
+          "Create own signs for living space",
+          "Read numbers on shelters or supplies",
+          "Match symbols to meanings"
+        ],
+        "materials": "Existing camp signage, sticks and stones for sign-making",
+        "assessment": "Can identify 5+ environmental print examples",
+        "content": {
+          "introduction": "Signs and symbols help us navigate our camp safely. Let's learn to read the important ones we see every day!",
+          "steps": [
+            "Walk to identify medical, water, toilet symbols",
+            "Discuss what each symbol means and why",
+            "Create family signs for own space",
+            "Practice 'reading' numbers on shelters",
+            "Make picture-word cards for important places"
+          ],
+          "tips": [
+            "Focus on safety-related signs first",
+            "Let child create their own symbols",
+            "Use multiple languages for signs if helpful",
+            "Connect symbols to real locations and needs"
+          ],
+          "games": [
+            "Sign Safari: Hunt for different types of signs",
+            "Symbol Maker: Create new symbols for camp needs",
+            "Direction Helper: Use signs to give directions"
+          ]
+        }
+      },
+      "week3": {
+        "topic": "Story Sequencing",
+        "objectives": ["Order story events", "Use sequence words"],
+        "activities": [
+          "Arrange picture stories in order",
+          "Retell daily events in sequence",
+          "Create picture stories with beginning, middle, end",
+          "Use words like first, next, last"
+        ],
+        "materials": "Drawings in dirt, stones for markers, natural objects",
+        "assessment": "Can sequence 3-4 events logically",
+        "content": {
+          "introduction": "Stories have order - beginning, middle, and end. Understanding sequence helps us tell better stories and follow instructions!",
+          "steps": [
+            "Draw 3 simple pictures of daily routine",
+            "Mix them up, have child order correctly",
+            "Add sequence words: first, then, last",
+            "Create new story with clear sequence",
+            "Act out stories in correct order"
+          ],
+          "tips": [
+            "Use familiar daily routines for first practice",
+            "Accept child's logic in creative stories",
+            "Physically move pictures to show sequence",
+            "Connect to real procedures like handwashing"
+          ],
+          "games": [
+            "Mixed-Up Day: Reorder daily routine pictures",
+            "Story Builders: Each person adds next event",
+            "Sequence Simon: Follow multi-step instructions"
+          ]
+        }
+      },
+      "week4": {
+        "topic": "Letter-Sound Connections",
+        "objectives": ["Connect letters to sounds", "Identify beginning sounds"],
+        "activities": [
+          "Match objects to letter sounds",
+          "Create alphabet collections",
+          "Play sound-hunting games",
+          "Practice letter sounds in words"
+        ],
+        "materials": "Found objects, dirt for writing, stones for sorting",
+        "assessment": "Can identify beginning sounds of familiar words",
+        "content": {
+          "introduction": "Letters make sounds that build words! Let's discover the sounds around us and connect them to letters we know.",
+          "steps": [
+            "Choose letter from child's name, make its sound",
+            "Find 3 objects starting with that sound",
+            "Draw letter large, place objects around it",
+            "Practice more letters from family names",
+            "Create sound collections for each letter"
+          ],
+          "tips": [
+            "Focus on consistent sound-letter relationships first",
+            "Use sounds from child's primary language",
+            "Make exaggerated sounds for clarity",
+            "Connect to meaningful words in child's life"
+          ],
+          "games": [
+            "Sound Treasure Hunt: Find items for specific sounds",
+            "Letter Sound Echo: Make sounds for letters shown",
+            "Sound Sorting: Group objects by beginning sounds"
+          ]
+        }
+      }
+    },
+    "age7_10": {
+      "week1": {
+        "topic": "Multilingual Vocabulary Building",
+        "objectives": ["Build vocabulary in multiple languages", "Create personal dictionaries"],
+        "activities": [
+          "Label camp items in 2-3 languages",
+          "Create picture dictionaries in dirt",
+          "Learn survival vocabulary across languages",
+          "Practice code-switching in conversations"
+        ],
+        "materials": "Dirt for drawing, sticks for writing, memory for words",
+        "assessment": "Can use 20+ words in multiple languages appropriately",
+        "content": {
+          "introduction": "Speaking multiple languages is a superpower! Let's build our vocabulary in all the languages we hear in camp.",
+          "steps": [
+            "Choose 5 essential items (water, food, shelter, etc.)",
+            "Learn words in camp's common languages",
+            "Create picture dictionary in dirt/notebook",
+            "Practice using words in mini-conversations",
+            "Teach words to family members"
+          ],
+          "tips": [
+            "Value all languages equally",
+            "Start with survival and safety vocabulary",
+            "Use peer teaching for different languages",
+            "Create language exchange partnerships"
+          ],
+          "games": [
+            "Language Switch: Say sentences switching languages",
+            "Translation Telephone: Pass message through languages",
+            "Multilingual Labeling: Create camp signs in all languages"
+          ]
+        }
+      },
+      "week2": {
+        "topic": "Functional Writing",
+        "objectives": ["Write for real purposes", "Create useful documents"],
+        "activities": [
+          "Write family schedule or rules",
+          "Create supply lists with pictures",
+          "Write letters to distant family",
+          "Make instruction guides for daily tasks"
+        ],
+        "materials": "Any available writing surface, charcoal, salvaged paper",
+        "assessment": "Can write simple functional text with purpose",
+        "content": {
+          "introduction": "Writing helps us remember, communicate, and organize. Let's write things that truly help our daily life!",
+          "steps": [
+            "Identify family writing need (list, schedule, letter)",
+            "Plan content together - what to include",
+            "Write with best available materials",
+            "Read back to check understanding",
+            "Post or save for actual use"
+          ],
+          "tips": [
+            "Focus on function over perfect form",
+            "Use pictures to support text",
+            "Write in most comfortable language first",
+            "Save writing on protected surfaces when possible"
+          ],
+          "games": [
+            "List Race: Who can list most items in category?",
+            "Message Service: Write and deliver camp messages",
+            "Instruction Writers: Create how-to guides for others"
+          ]
+        }
+      },
+      "week3": {
+        "topic": "Reading Comprehension Strategies",
+        "objectives": ["Understand text meaning", "Use context clues"],
+        "activities": [
+          "Read and discuss camp announcements",
+          "Predict story outcomes",
+          "Find main ideas in short texts",
+          "Create questions about readings"
+        ],
+        "materials": "Any available text, stories told orally, camp notices",
+        "assessment": "Can explain main idea of simple text",
+        "content": {
+          "introduction": "Understanding what we read helps us learn and stay informed. Let's practice making sense of words together!",
+          "steps": [
+            "Read short text together (or tell story)",
+            "Stop and predict what happens next",
+            "Identify most important information",
+            "Ask questions about confusing parts",
+            "Retell main points in own words"
+          ],
+          "tips": [
+            "Use any available text, including labels",
+            "Accept oral 'reading' of remembered stories",
+            "Focus on meaning over perfect reading",
+            "Connect reading to real camp information"
+          ],
+          "games": [
+            "Prediction Champions: Guess story endings",
+            "Question Masters: Create questions about text",
+            "Main Idea Hunters: Find key point in announcements"
+          ]
+        }
+      },
+      "week4": {
+        "topic": "Creative Story Writing",
+        "objectives": ["Write original stories", "Develop narrative skills"],
+        "activities": [
+          "Create adventure stories about camp life",
+          "Write about hopes and dreams",
+          "Develop character descriptions",
+          "Illustrate stories with drawings"
+        ],
+        "materials": "Writing surface, drawing space in dirt, imagination",
+        "assessment": "Can write story with beginning, middle, end",
+        "content": {
+          "introduction": "Our experiences and dreams make powerful stories. Let's create tales that capture our journey and hopes!",
+          "steps": [
+            "Brainstorm story ideas from experiences or wishes",
+            "Create main character based on self or hero",
+            "Plan beginning (problem), middle (journey), end (solution)",
+            "Write story with available materials",
+            "Share story with family or friends"
+          ],
+          "tips": [
+            "Value emotional truth over factual accuracy",
+            "Encourage hope and resilience themes",
+            "Accept mixing of languages in writing",
+            "Preserve special stories when possible"
+          ],
+          "games": [
+            "Story Starters: Continue given opening lines",
+            "Character Mix: Combine traits for new characters",
+            "Group Epic: Each person writes one paragraph"
+          ]
+        }
+      }
+    }
+  },
+  "science": {
+    "age3_5": {
+      "week1": {
+        "topic": "Our Bodies Stay Healthy",
+        "objectives": ["Name basic body parts", "Understand simple hygiene"],
+        "activities": [
+          "Touch and name body parts in song",
+          "Practice washing hands with minimal water",
+          "Draw body outline in dirt",
+          "Demonstrate covering coughs"
+        ],
+        "materials": "Water in container, cloth, dirt for drawing",
+        "assessment": "Can name 5 body parts and show handwashing",
+        "content": {
+          "introduction": "Our bodies are amazing! Let's learn about our body parts and how to keep them healthy and strong.",
+          "steps": [
+            "Sing 'Head, Shoulders, Knees, and Toes' slowly",
+            "Draw person shape in dirt, add body parts",
+            "Show germs as dirt on hands",
+            "Practice water-saving handwash technique",
+            "Demonstrate cough-covering with elbow"
+          ],
+          "tips": [
+            "Use child's language for body parts first",
+            "Make hygiene fun with songs or counting",
+            "Praise efforts to stay clean",
+            "Model good hygiene consistently"
+          ],
+          "games": [
+            "Body Part Freeze: Touch named body part quickly",
+            "Germ Chase: Pretend to catch and wash away germs",
+            "Healthy Hero: Act out healthy behaviors"
+          ]
+        }
+      },
+      "week2": {
+        "topic": "Safe and Unsafe Things",
+        "objectives": ["Identify dangers", "Practice safety rules"],
+        "activities": [
+          "Sort safe/unsafe items",
+          "Practice 'Stop, Look, Listen'",
+          "Identify safe adults",
+          "Learn boundary rules for camp"
+        ],
+        "materials": "Found objects, designated safe space",
+        "assessment": "Can identify 3 dangers and demonstrate safety response",
+        "content": {
+          "introduction": "Staying safe helps us play and grow! Let's learn what things to be careful about in our camp.",
+          "steps": [
+            "Show safe items (smooth stone) vs unsafe (sharp stick)",
+            "Practice stopping when adult says 'danger'",
+            "Identify safe places in living area",
+            "Name trusted adults who can help",
+            "Create family safety rules together"
+          ],
+          "tips": [
+            "Keep rules simple and positive when possible",
+            "Practice safety responses through play",
+            "Avoid creating excessive fear",
+            "Regularly review safe adults with child"
+          ],
+          "games": [
+            "Safety Freeze: Stop immediately when 'danger' called",
+            "Safe or Not?: Sort items into two groups",
+            "Helper Hunt: Point to adults who can help"
+          ]
+        }
+      },
+      "week3": {
+        "topic": "Weather and Clothing",
+        "objectives": ["Observe weather", "Choose appropriate clothing"],
+        "activities": [
+          "Feel and describe weather",
+          "Match clothing to weather",
+          "Create weather symbols in dirt",
+          "Practice dressing for conditions"
+        ],
+        "materials": "Available clothing items, dirt for drawing",
+        "assessment": "Can describe weather and choose appropriate clothes",
+        "content": {
+          "introduction": "Weather changes how we feel and what we wear. Let's become weather watchers to stay comfortable!",
+          "steps": [
+            "Go outside, describe what we feel (hot, cold, wind)",
+            "Draw sun, clouds, rain symbols in dirt",
+            "Show clothes for different weather",
+            "Practice putting on layers",
+            "Predict tomorrow's weather based on sky"
+          ],
+          "tips": [
+            "Use whatever clothing is available",
+            "Focus on comfort and health over appearance",
+            "Teach layering with limited clothes",
+            "Connect weather to daily activities"
+          ],
+          "games": [
+            "Weather Reporter: Describe today's weather",
+            "Dress-Up Race: Quick changes for weather shifts",
+            "Weather Feelings: Act out how different weather feels"
+          ]
+        }
+      },
+      "week4": {
+        "topic": "Plants Around Us",
+        "objectives": ["Notice plant differences", "Understand plants need care"],
+        "activities": [
+          "Find different leaf shapes",
+          "Plant seeds in container",
+          "Water plants carefully",
+          "Create leaf art in dirt"
+        ],
+        "materials": "Containers, seeds or beans, water, found leaves",
+        "assessment": "Can identify plant needs and show gentle care",
+        "content": {
+          "introduction": "Plants give us food and make our space beautiful. Let's learn to notice and care for plants around us!",
+          "steps": [
+            "Walk to find 3 different leaves safely",
+            "Compare shapes, sizes, colors",
+            "Plant bean in container with drainage",
+            "Place in sunny spot, water gently",
+            "Check daily for changes"
+          ],
+          "tips": [
+            "Only touch plants adults say are safe",
+            "Use any available seeds, even from food",
+            "Teach water conservation while plant caring",
+            "Celebrate tiny growth changes"
+          ],
+          "games": [
+            "Leaf Match: Find two similar leaves",
+            "Plant Needs: Act out sun, water, soil",
+            "Growing Game: Curl up small, slowly 'grow' tall"
+          ]
+        }
+      }
+    },
+    "age5_7": {
+      "week1": {
+        "topic": "Clean Water Safety",
+        "objectives": ["Identify clean vs dirty water", "Understand water treatment basics"],
+        "activities": [
+          "Compare clear and muddy water samples",
+          "Learn about boiling and settling",
+          "Practice water conservation",
+          "Create water safety rules"
+        ],
+        "materials": "Clear containers, water, dirt, cloth for filtering",
+        "assessment": "Can explain why dirty water is unsafe and one cleaning method",
+        "content": {
+          "introduction": "Clean water keeps us healthy! Let's learn how to identify safe water and help keep our water clean.",
+          "steps": [
+            "Show two containers - clear vs muddy water",
+            "Discuss which looks safe and why",
+            "Demonstrate simple settling technique",
+            "Show how boiling makes water safer",
+            "Practice water-saving techniques"
+          ],
+          "tips": [
+            "Emphasize water treatment adults do",
+            "Focus on observation skills",
+            "Connect to real water sources in camp",
+            "Praise water conservation efforts"
+          ],
+          "games": [
+            "Water Detective: Spot clean vs dirty water",
+            "Filter Challenge: Try cleaning muddy water with cloth",
+            "Water Saver: Practice using minimal water for tasks"
+          ]
+        }
+      },
+      "week2": {
+        "topic": "Food Safety and Nutrition",
+        "objectives": ["Identify safe food practices", "Understand basic food groups"],
+        "activities": [
+          "Sort foods into groups",
+          "Learn safe food storage",
+          "Practice checking for spoilage",
+          "Create balanced meal with available foods"
+        ],
+        "materials": "Food packages or drawings, storage containers",
+        "assessment": "Can identify spoiled food and name food groups",
+        "content": {
+          "introduction": "Eating safely helps us grow strong! Let's learn about keeping food safe and choosing good foods for our bodies.",
+          "steps": [
+            "Look at available foods, sort by type",
+            "Check for signs food is still good",
+            "Discuss how heat and cold affect food",
+            "Plan meal with different food types",
+            "Practice safe food handling"
+          ],
+          "tips": [
+            "Work with whatever foods are available",
+            "Focus on safety over ideal nutrition",
+            "Teach practical storage in camp conditions",
+            "Avoid food waste through careful checking"
+          ],
+          "games": [
+            "Food Group Sort: Organize foods by type",
+            "Spoilage Detectives: Spot signs food isn't safe",
+            "Meal Planner: Design balanced meal with available items"
+          ]
+        }
+      },
+      "week3": {
+        "topic": "Illness Prevention",
+        "objectives": ["Understand germ spread", "Practice prevention methods"],
+        "activities": [
+          "Demonstrate how germs spread",
+          "Practice proper cough covering",
+          "Learn when to seek medical help",
+          "Create wellness routine"
+        ],
+        "materials": "Flour or dirt for 'germs', water, cloth",
+        "assessment": "Can demonstrate 3 ways to prevent illness spread",
+        "content": {
+          "introduction": "We can help stop sickness from spreading! Let's learn how germs move and how to protect ourselves and others.",
+          "steps": [
+            "Put flour on hands as pretend germs",
+            "Touch objects to show spread",
+            "Wash hands properly to remove 'germs'",
+            "Practice coughing into elbow",
+            "Identify when to tell adults about sickness"
+          ],
+          "tips": [
+            "Make germ concept visible and concrete",
+            "Emphasize protecting others too",
+            "Know camp medical resources",
+            "Build confidence not fear"
+          ],
+          "games": [
+            "Germ Tag: See how 'germs' spread through touch",
+            "Health Heroes: Act out healthy behaviors",
+            "Symptom Charades: Act out when to get help"
+          ]
+        }
+      },
+      "week4": {
+        "topic": "Environmental Care",
+        "objectives": ["Understand waste impact", "Practice waste reduction"],
+        "activities": [
+          "Sort waste materials",
+          "Create art from recyclables",
+          "Learn about decomposition",
+          "Organize cleanup activity"
+        ],
+        "materials": "Waste materials, containers for sorting",
+        "assessment": "Can sort waste and explain why cleanliness matters",
+        "content": {
+          "introduction": "Keeping our space clean helps everyone stay healthy. Let's learn to manage waste and protect our environment!",
+          "steps": [
+            "Identify different types of waste",
+            "Sort into groups - reusable, burnable, dangerous",
+            "Show what happens to buried organic waste",
+            "Create useful item from waste material",
+            "Organize small area cleanup"
+          ],
+          "tips": [
+            "Focus on practical camp waste management",
+            "Show creativity with reusing materials",
+            "Connect cleanliness to health",
+            "Make cleanup fun and communal"
+          ],
+          "games": [
+            "Waste Race: Sort items quickly into correct groups",
+            "Upcycle Challenge: Make something new from waste",
+            "Clean Team: Group cleanup competition"
+          ]
+        }
+      }
+    },
+    "age7_10": {
+      "week1": {
+        "topic": "Disease Prevention and Control",
+        "objectives": ["Understand disease transmission", "Implement prevention strategies"],
+        "activities": [
+          "Map disease spread patterns",
+          "Create hygiene monitoring system",
+          "Design health education materials",
+          "Practice first aid basics"
+        ],
+        "materials": "Dirt for diagrams, cloth, basic first aid items",
+        "assessment": "Can explain disease prevention and demonstrate first aid",
+        "content": {
+          "introduction": "Understanding how diseases spread empowers us to protect our community. Let's become health champions!",
+          "steps": [
+            "Draw diagram showing person-to-person spread",
+            "Identify high-risk behaviors and locations",
+            "Create family hygiene checklist",
+            "Learn basic wound cleaning",
+            "Design poster teaching others"
+          ],
+          "tips": [
+            "Use real camp health challenges appropriately",
+            "Empower rather than frighten",
+            "Include traditional health practices respectfully",
+            "Connect to available medical services"
+          ],
+          "games": [
+            "Outbreak Investigators: Trace pretend disease spread",
+            "Prevention Patrol: Spot and fix risky situations",
+            "First Aid Relay: Practice basic care techniques"
+          ]
+        }
+      },
+      "week2": {
+        "topic": "Nutrition with Limited Resources",
+        "objectives": ["Maximize nutritional value", "Prevent malnutrition signs"],
+        "activities": [
+          "Analyze available food nutrients",
+          "Create meal plans with rations",
+          "Identify malnutrition signs",
+          "Grow nutrient-rich sprouts"
+        ],
+        "materials": "Food rations, containers, seeds for sprouting",
+        "assessment": "Can plan balanced meals and identify nutrition needs",
+        "content": {
+          "introduction": "Even with limited food, we can make smart choices for our health. Let's learn to maximize nutrition!",
+          "steps": [
+            "List all available foods in camp",
+            "Group by main nutrient provided",
+            "Plan day's meals for best balance",
+            "Start sprouts for fresh nutrients",
+            "Learn warning signs of poor nutrition"
+          ],
+          "tips": [
+            "Work within real food constraints",
+            "Focus on achievable improvements",
+            "Include traditional nutrition knowledge",
+            "Address without stigmatizing hunger"
+          ],
+          "games": [
+            "Nutrient Detective: Find vitamins in available foods",
+            "Menu Master: Create best meal from limited items",
+            "Sprout Race: Whose sprouts grow fastest?"
+          ]
+        }
+      },
+      "week3": {
+        "topic": "Mental Health and Coping",
+        "objectives": ["Recognize stress signs", "Practice coping strategies"],
+        "activities": [
+          "Identify emotions and triggers",
+          "Learn breathing exercises",
+          "Create support network map",
+          "Develop personal coping kit"
+        ],
+        "materials": "Quiet space, stones for counting breaths",
+        "assessment": "Can identify emotions and use two coping strategies",
+        "content": {
+          "introduction": "Our minds need care just like our bodies. Let's learn ways to handle difficult feelings and support each other.",
+          "steps": [
+            "Name different emotions we feel",
+            "Show where we feel them in our bodies",
+            "Practice deep breathing with counting",
+            "Identify people who support us",
+            "Create list of helpful activities"
+          ],
+          "tips": [
+            "Normalize all emotions as valid",
+            "Provide multiple coping options",
+            "Include culturally appropriate practices",
+            "Know when to seek adult help"
+          ],
+          "games": [
+            "Emotion Sculptures: Show feelings with body",
+            "Breathing Buddy: Practice calming breaths together",
+            "Support Web: Map connections with string/drawings"
+          ]
+        }
+      },
+      "week4": {
+        "topic": "Emergency Preparedness",
+        "objectives": ["Plan for emergencies", "Know evacuation procedures"],
+        "activities": [
+          "Create family emergency plan",
+          "Practice evacuation routes",
+          "Prepare emergency supply list",
+          "Learn basic emergency signals"
+        ],
+        "materials": "Containers for supplies, whistle or noise maker",
+        "assessment": "Knows emergency plan and can demonstrate procedures",
+        "content": {
+          "introduction": "Being prepared helps us stay calm in emergencies. Let's create plans to keep our families safe!",
+          "steps": [
+            "Identify possible camp emergencies",
+            "Map evacuation routes from shelter",
+            "Choose family meeting point",
+            "List essential grab items",
+            "Practice emergency whistle signals"
+          ],
+          "tips": [
+            "Balance preparedness with avoiding anxiety",
+            "Use camp's actual emergency procedures",
+            "Make plans concrete and practicable",
+            "Include all family members in planning"
+          ],
+          "games": [
+            "Emergency Drill: Practice quick, calm evacuation",
+            "Supply Memory: Remember essential items list",
+            "Signal Practice: Learn emergency communication"
+          ]
+        }
+      }
+    }
+  },
+  "life_skills": {
+    "age3_5": {
+      "week1": {
+        "topic": "My Family and Community",
+        "objectives": ["Know family members' names", "Understand belonging"],
+        "activities": [
+          "Draw family members in dirt",
+          "Practice saying full names",
+          "Identify family roles",
+          "Create family handprint art"
+        ],
+        "materials": "Dirt for drawing, paint or mud for handprints",
+        "assessment": "Can name immediate family members and their roles",
+        "content": {
+          "introduction": "Our families love us and keep us safe. Let's celebrate the special people who care for us!",
+          "steps": [
+            "Sit together and name each family member",
+            "Draw circles for each person in dirt",
+            "Add simple features to show who is who",
+            "Practice saying everyone's full name",
+            "Make family handprints together"
+          ],
+          "tips": [
+            "Include all caregivers as family",
+            "Respect diverse family structures",
+            "Use photos if available",
+            "Celebrate unique family traditions"
+          ],
+          "games": [
+            "Family Statues: Freeze like different family members",
+            "Name Song: Sing names to familiar tune",
+            "Family Helper: Act out how family members help"
+          ]
+        }
+      },
+      "week2": {
+        "topic": "Sharing and Taking Turns",
+        "objectives": ["Practice sharing materials", "Wait for turns patiently"],
+        "activities": [
+          "Pass and share objects in circle",
+          "Practice 'please' and 'thank you'",
+          "Take turns in simple games",
+          "Share snacks or water fairly"
+        ],
+        "materials": "Any available toys or objects, food items",
+        "assessment": "Can share materials and wait for short turns",
+        "content": {
+          "introduction": "Sharing helps everyone have fun and get what they need. Let's practice being good sharers!",
+          "steps": [
+            "Start with one special object",
+            "Pass around circle, each holds briefly",
+            "Practice asking 'May I have a turn?'",
+            "Respond with 'Yes' and pass gently",
+            "Celebrate successful sharing"
+          ],
+          "tips": [
+            "Start with short turns",
+            "Model sharing behavior constantly",
+            "Praise attempts at sharing",
+            "Have enough materials when possible"
+          ],
+          "games": [
+            "Sharing Circle: Pass object with song",
+            "Turn Timer: Count to 10 for each turn",
+            "Thank You Game: Practice polite exchanges"
+          ]
+        }
+      },
+      "week3": {
+        "topic": "Feelings and Kindness",
+        "objectives": ["Name basic emotions", "Show kindness to others"],
+        "activities": [
+          "Make faces showing emotions",
+          "Practice comforting others",
+          "Share kind words",
+          "Help with simple tasks"
+        ],
+        "materials": "Mirror or water reflection, dirt for drawing faces",
+        "assessment": "Can name emotions and demonstrate kind actions",
+        "content": {
+          "introduction": "Everyone has feelings! When we understand feelings, we can be better friends and helpers.",
+          "steps": [
+            "Show happy, sad, angry, scared faces",
+            "Draw emotion faces in dirt",
+            "Practice 'How are you feeling?'",
+            "Show how to comfort sad friend",
+            "Do one kind thing for someone"
+          ],
+          "tips": [
+            "Validate all emotions as okay to feel",
+            "Model emotional vocabulary",
+            "Connect emotions to body sensations",
+            "Praise kind behaviors specifically"
+          ],
+          "games": [
+            "Feeling Faces: Guess emotions from expressions",
+            "Kindness Collector: Count kind acts each day",
+            "Comfort Practice: Role-play helping upset friend"
+          ]
+        }
+      },
+      "week4": {
+        "topic": "Daily Routines and Self-Care",
+        "objectives": ["Follow simple routines", "Participate in self-care"],
+        "activities": [
+          "Practice morning routine steps",
+          "Help with simple chores",
+          "Learn to dress independently",
+          "Create routine chart with pictures"
+        ],
+        "materials": "Clothes, water for washing, pictures or symbols",
+        "assessment": "Can complete 2-3 self-care tasks independently",
+        "content": {
+          "introduction": "Taking care of ourselves helps us feel good and ready for the day. Let's practice our important daily tasks!",
+          "steps": [
+            "List morning tasks: wake, wash, dress, eat",
+            "Practice each step slowly",
+            "Create picture chart of routine",
+            "Do tasks in same order daily",
+            "Celebrate independent success"
+          ],
+          "tips": [
+            "Keep routines simple and consistent",
+            "Allow extra time for independence",
+            "Adapt for limited resources",
+            "Build confidence through success"
+          ],
+          "games": [
+            "Routine Race: Do morning tasks in order",
+            "Self-Care Hero: Celebrate completing tasks",
+            "Simon Says Self-Care: Practice care movements"
+          ]
+        }
+      }
+    },
+    "age5_7": {
+      "week1": {
+        "topic": "Community Helpers and Roles",
+        "objectives": ["Identify community helpers", "Understand how to help"],
+        "activities": [
+          "Map important camp locations",
+          "Interview community helpers",
+          "Practice helping behaviors",
+          "Create helper appreciation art"
+        ],
+        "materials": "Dirt for mapping, materials for thank you art",
+        "assessment": "Can name 5 community helpers and their roles",
+        "content": {
+          "introduction": "Many people work together to keep our community safe and healthy. Let's learn about helpers and how we can help too!",
+          "steps": [
+            "Walk to identify helper locations (medical, food, etc.)",
+            "Draw map showing where helpers work",
+            "Discuss what each helper does",
+            "Practice ways children can help",
+            "Make thank you art for one helper"
+          ],
+          "tips": [
+            "Include informal helpers, not just official ones",
+            "Emphasize children can be helpers too",
+            "Arrange safe helper visits if possible",
+            "Build respect for all helping roles"
+          ],
+          "games": [
+            "Helper Charades: Act out different helping jobs",
+            "Community Map: Add new helpers to camp map",
+            "Helper of the Day: Take turns doing helpful tasks"
+          ]
+        }
+      },
+      "week2": {
+        "topic": "Conflict Resolution",
+        "objectives": ["Solve problems peacefully", "Use words not actions"],
+        "activities": [
+          "Practice 'I feel' statements",
+          "Learn compromise strategies",
+          "Role-play common conflicts",
+          "Create peace corner"
+        ],
+        "materials": "Quiet space, calming objects",
+        "assessment": "Can use words to express upset and find solutions",
+        "content": {
+          "introduction": "Sometimes we disagree with friends, and that's okay! Let's learn peaceful ways to solve problems together.",
+          "steps": [
+            "Teach 'I feel ___ when ___' format",
+            "Practice with pretend problems",
+            "Show how to take turns talking",
+            "Find solutions where both win",
+            "Create special peace-making place"
+          ],
+          "tips": [
+            "Model conflict resolution constantly",
+            "Intervene before physical conflicts",
+            "Praise use of words over actions",
+            "Accept that some conflicts need adult help"
+          ],
+          "games": [
+            "Problem Solvers: Find solutions to toy conflicts",
+            "Feeling Words: Expand emotion vocabulary",
+            "Peace Makers: Celebrate peaceful solutions"
+          ]
+        }
+      },
+      "week3": {
+        "topic": "Cultural Identity and Respect",
+        "objectives": ["Share cultural traditions", "Respect differences"],
+        "activities": [
+          "Share family traditions or stories",
+          "Learn greetings in different languages",
+          "Create cultural art or symbols",
+          "Celebrate diversity in community"
+        ],
+        "materials": "Natural materials for art, space for sharing",
+        "assessment": "Can share one tradition and show respect for others",
+        "content": {
+          "introduction": "Our community has people from many places with beautiful traditions. Let's share and learn from each other!",
+          "steps": [
+            "Each family shares one tradition",
+            "Teach greeting in home language",
+            "Create art representing culture",
+            "Learn about another family's ways",
+            "Find similarities across differences"
+          ],
+          "tips": [
+            "Ensure all cultures feel valued",
+            "Focus on similarities and differences positively",
+            "Adapt for families still processing trauma",
+            "Include new traditions formed in camp"
+          ],
+          "games": [
+            "Language Exchange: Teach words to friends",
+            "Culture Show: Share songs, stories, or dances",
+            "Same and Different: Find commonalities"
+          ]
+        }
+      },
+      "week4": {
+        "topic": "Goal Setting and Future Planning",
+        "objectives": ["Set simple goals", "Work toward achievements"],
+        "activities": [
+          "Create picture goals",
+          "Make daily achievement charts",
+          "Practice steps toward goals",
+          "Celebrate progress"
+        ],
+        "materials": "Drawing materials, stones for counting progress",
+        "assessment": "Can set realistic goal and track progress",
+        "content": {
+          "introduction": "Having goals gives us something wonderful to work toward. Let's dream and plan for things we want to learn or do!",
+          "steps": [
+            "Ask 'What do you want to learn?'",
+            "Draw picture of goal",
+            "Break into small daily steps",
+            "Track progress with stones or marks",
+            "Celebrate each small success"
+          ],
+          "tips": [
+            "Keep goals achievable and short-term",
+            "Focus on effort over outcome",
+            "Include academic and life skill goals",
+            "Maintain hope while being realistic"
+          ],
+          "games": [
+            "Goal Ladder: Draw steps toward goal",
+            "Progress Stones: Add stone for each achievement",
+            "Dream Circle: Share hopes and plans"
+          ]
+        }
+      }
+    },
+    "age7_10": {
+      "week1": {
+        "topic": "Leadership and Responsibility",
+        "objectives": ["Develop leadership skills", "Take age-appropriate responsibilities"],
+        "activities": [
+          "Lead group activities",
+          "Create helper job chart",
+          "Mentor younger children",
+          "Organize community project"
+        ],
+        "materials": "Chart materials, project supplies",
+        "assessment": "Can lead activity and complete responsibilities reliably",
+        "content": {
+          "introduction": "Leaders help make our community better! Let's develop skills to lead, help, and take responsibility for important tasks.",
+          "steps": [
+            "Identify leadership qualities together",
+            "Assign rotating leader roles",
+            "Plan small community service project",
+            "Practice leading games or activities",
+            "Reflect on leadership experiences"
+          ],
+          "tips": [
+            "Rotate leadership opportunities fairly",
+            "Match responsibilities to abilities",
+            "Support without taking over",
+            "Recognize different leadership styles"
+          ],
+          "games": [
+            "Leader of the Day: Rotate leadership roles",
+            "Project Planners: Design community improvements",
+            "Mentor Match: Pair with younger children"
+          ]
+        }
+      },
+      "week2": {
+        "topic": "Financial Literacy Basics",
+        "objectives": ["Understand resource management", "Practice budgeting"],
+        "activities": [
+          "Create pretend camp store",
+          "Practice trading and bartering",
+          "Budget limited resources",
+          "Learn saving strategies"
+        ],
+        "materials": "Stones as currency, tradeable items",
+        "assessment": "Can make basic budget decisions and explain choices",
+        "content": {
+          "introduction": "Managing resources wisely helps families thrive. Let's learn about saving, spending, and making smart choices!",
+          "steps": [
+            "Set up trading post with stones as money",
+            "Price different items based on value",
+            "Give budget for necessary items",
+            "Practice saving for wanted items",
+            "Discuss real family resource decisions"
+          ],
+          "tips": [
+            "Keep examples relevant to camp life",
+            "Include non-monetary resources like time",
+            "Teach both individual and communal thinking",
+            "Avoid creating stress about real poverty"
+          ],
+          "games": [
+            "Market Day: Practice buying and selling",
+            "Save or Spend: Make budget choices",
+            "Resource Manager: Allocate limited supplies"
+          ]
+        }
+      },
+      "week3": {
+        "topic": "Digital Citizenship Preparation",
+        "objectives": ["Understand online safety basics", "Learn information evaluation"],
+        "activities": [
+          "Discuss technology experiences",
+          "Create internet safety rules",
+          "Practice evaluating information",
+          "Learn about digital footprints"
+        ],
+        "materials": "Paper or dirt for drawing concepts",
+        "assessment": "Can explain basic online safety and information checking",
+        "content": {
+          "introduction": "Technology connects our world! Even without devices now, let's prepare to use technology safely and wisely someday.",
+          "steps": [
+            "Share any technology experiences",
+            "Discuss private information protection",
+            "Practice 'Is this true?' questioning",
+            "Create pretend profiles safely",
+            "Plan future technology learning"
+          ],
+          "tips": [
+            "Stay hopeful about future opportunities",
+            "Focus on critical thinking skills",
+            "Adapt for varying technology exposure",
+            "Include both benefits and risks"
+          ],
+          "games": [
+            "True or Trick: Evaluate pretend information",
+            "Safe Sharing: Decide what to keep private",
+            "Future Tech: Imagine positive technology use"
+          ]
+        }
+      },
+      "week4": {
+        "topic": "Career Exploration and Skills",
+        "objectives": ["Explore career possibilities", "Identify personal strengths"],
+        "activities": [
+          "Interview working adults",
+          "Identify skills in daily tasks",
+          "Create dream job descriptions",
+          "Practice job-related skills"
+        ],
+        "materials": "Interview questions, materials for skill practice",
+        "assessment": "Can identify 3 careers and related skills needed",
+        "content": {
+          "introduction": "Every person has unique talents! Let's explore different jobs and discover our own strengths and interests.",
+          "steps": [
+            "List jobs seen in camp and beyond",
+            "Interview adults about their work",
+            "Identify skills used in each job",
+            "Assess own interests and abilities",
+            "Practice one job-related skill"
+          ],
+          "tips": [
+            "Include diverse career options",
+            "Value all types of work equally",
+            "Connect current learning to future jobs",
+            "Maintain optimism about possibilities"
+          ],
+          "games": [
+            "Job Shadow: Follow adult for work task",
+            "Skill Scouts: Spot skills in everyday activities",
+            "Career Day: Present dream jobs to group"
+          ]
+        }
+      }
+    }
+  }
+}
