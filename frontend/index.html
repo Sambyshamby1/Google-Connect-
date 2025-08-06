@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#2196F3">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Refugee Connect</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sustainable-living/sustainable-styles.css">
+    <link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==">
+    <style>
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(33, 150, 243, 0.7);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 10px 5px rgba(33, 150, 243, 0.3);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(33, 150, 243, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Status Bar -->
+    <div class="status-bar">
+        <div class="status-left">
+            <span class="app-title">Refugee Connect</span>
+        </div>
+        <div class="status-right">
+            <span class="ai-status" id="aiStatus">
+                <span class="status-icon">📡</span>
+                <span class="status-text">Offline</span>
+            </span>
+            <span class="battery-status" id="batteryStatus">
+                <span class="battery-icon">🔋</span>
+                <span class="battery-level">--</span>
+            </span>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-container" id="mainContainer">
+        <!-- Home Page -->
+        <div class="page active" id="homePage">
+            <div class="welcome-section">
+                <h1>Welcome to Refugee Connect</h1>
+                <p class="subtitle">Your offline humanitarian toolkit</p>
+            </div>
+            
+            <div class="nav-grid">
+                <div class="nav-card" data-page="emergency">
+                    <div class="icon">🆘</div>
+                    <div class="label">Emergency</div>
+                    <div class="description">Critical phrases & help</div>
+                </div>
+                <div class="nav-card" data-page="translate">
+                    <div class="icon">🌐</div>
+                    <div class="label">Translate</div>
+                    <div class="description">AI-powered translation</div>
+                </div>
+                <div class="nav-card" data-page="gemmorandum">
+                    <div class="icon">📋</div>
+                    <div class="label">Gemmorandum</div>
+                    <div class="description">Form completion assistant</div>
+                </div>
+                <div class="nav-card" data-page="documents">
+                    <div class="icon">📂</div>
+                    <div class="label">Documents</div>
+                    <div class="description">Secure document storage</div>
+                </div>
+                <div class="nav-card" data-page="family">
+                    <div class="icon">👨‍👩‍👧‍👦</div>
+                    <div class="label">Family</div>
+                    <div class="description">Search & profiles</div>
+                </div>
+                <div class="nav-card" data-page="medical">
+                    <div class="icon">🏥</div>
+                    <div class="label">Medical</div>
+                    <div class="description">Health guidance</div>
+                </div>
+                <div class="nav-card" data-page="legal">
+                    <div class="icon">⚖️</div>
+                    <div class="label">Rights</div>
+                    <div class="description">Know your rights</div>
+                </div>
+                <div class="nav-card" data-page="chat">
+                    <div class="icon">💬</div>
+                    <div class="label">Speak to Gemma</div>
+                    <div class="description">AI humanitarian assistant</div>
+                </div>
+                <div class="nav-card" data-page="gempath">
+                    <div class="icon">👨‍👩‍👧‍👦</div>
+                    <div class="label">GemPath</div>
+                    <div class="description">Family reunification interviews</div>
+                </div>
+                <div class="nav-card" data-page="learn-together">
+                    <div class="icon">👨‍👩‍👧‍👦</div>
+                    <div class="label">Learn Together</div>
+                    <div class="description">Education support for children</div>
+                </div>
+                <div class="nav-card" data-page="skills-exchange">
+                    <div class="icon">🤝</div>
+                    <div class="label">Skills Exchange</div>
+                    <div class="description">Community skills & barter</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Emergency Page -->
+        <div class="page" id="emergencyPage">
+            <div class="page-header">
+                <button class="back-btn" data-page="home">←</button>
+                <h2>Emergency Phrases</h2>
+            </div>
+            <div class="language-selector">
+                <select id="emergencyLanguage" class="language-dropdown">
+                    <option value="en">English</option>
+                    <option value="ar">العربية (Arabic)</option>
+                    <option value="fa">فارسی (Persian)</option>
+                    <option value="ur">اردو (Urdu)</option>
+                    <option value="ps">پښتو (Pashto)</option>
+                    <option value="fr">Français (French)</option>
+                    <option value="de">Deutsch (German)</option>
+                    <option value="es">Español (Spanish)</option>
+                    <option value="tr">Türkçe (Turkish)</option>
+                    <option value="so">Soomaali (Somali)</option>
+                </select>
+            </div>
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="emergency">Emergency</button>
+                <button class="category-tab" data-category="medical">Medical</button>
+                <button class="category-tab" data-category="legal">Legal</button>
+                <button class="category-tab" data-category="basic">Basic</button>
+                <button class="category-tab" data-category="family">Family</button>
+            </div>
+            <div class="phrases-container" id="phrasesContainer">
+                <!-- Phrases will be loaded dynamically -->
+            </div>
+        </div>
+
+        <!-- Translation Page -->
+        <div class="page" id="translatePage">
+            <div class="page-header">
+                <button class="back-btn" data-page="home">←</button>
+                <h2>AI Translation</h2>
+            </div>
+            <div class="translation-container">
+                <div class="language-selection">
+                    <select id="fromLanguage" class="language-dropdown">
+                        <option value="ar">العربية (Arabic)</option>
+                        <option value="en">English</option>
+                        <option value="fa">فارسی (Persian)</option>
+                        <option value="ur">اردو (Urdu)</option>
+                        <option value="ps">پښتو (Pashto)</option>
+                        <option value="fr">Français</option>
+                        <option value="de">Deutsch</option>
+                        <option value="es">Español</option>
+                        <option value="tr">Türkçe</option>
+                        <option value="so">Soomaali</option>
+                    </select>
+                    <button class="swap-btn" id="swapLanguages">↔️</button>
+                    <select id="toLanguage" class="language-dropdown">
+                        <option value="en">English</option>
+                        <option value="ar">العربية (Arabic)</option>
+                        <option value="fa">فارسی (Persian)</option>
+                        <option value="ur">اردو (Urdu)</option>
+                        <option value="ps">پښتو (Pashto)</option>
+                        <option value="fr">Français</option>
+                        <option value="de">Deutsch</option>
+                        <option value="es">Español</option>
+                        <option value="tr">Türkçe</option>
+                        <option value="so">Soomaali</option>
+                    </select>
+                </div>
+                <div class="input-section">
+                    <textarea id="inputText" class="translation-input" placeholder="Type or speak your message..." rows="5"></textarea>
+                    <div class="keyboard-toggle" id="keyboardToggle" style="display: none;">
+                        <button class="keyboard-btn">⌨️ Show Keyboard</button>
+                        <span class="keyboard-hint">For Arabic, Persian, Urdu, Pashto</span>
+                    </div>
+                </div>
+                <button class="translate-btn" id="translateBtn">Translate</button>
+                <div class="output-section">
+                    <div class="translation-output" id="translationOutput">
+                        <p class="placeholder">Translation will appear here...</p>
+                    </div>
+                    <div class="ai-advice" id="aiAdvice" style="display: none;">
+                        <h4>AI Advice:</h4>
+                        <p id="adviceContent"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Virtual Keyboard Container -->
+            <div class="virtual-keyboard" id="virtualKeyboard" style="display: none;">
+                <!-- Keyboard will be loaded dynamically -->
+            </div>
+        </div>
+
+        <!-- Documents Page -->
+        <div class="page" id="documentsPage">
+            <div class="page-header">
+                <button class="back-btn" data-page="home">←</button>
+                <h2>Document Vault</h2>
+            </div>
+            <div class="documents-container">
+                <div class="document-actions">
+                    <button class="capture-btn" id="captureDocument">
+                        <span class="capture-icon">📷</span>
+                        <span>Capture Document</span>
+                    </button>
+                </div>
+                <div class="document-list" id="documentList">
+                    <p class="empty-message">No documents stored yet. Tap the camera button to add important documents.</p>
+                </div>
+            </div>
+            <!-- Camera Modal -->
+            <div class="modal" id="cameraModal" style="display: none;">
+                <div class="modal-content">
+                    <h3>Capture Document</h3>
+                    <select id="documentType" class="document-type-select">
+                        <option value="passport">Passport</option>
+                        <option value="national_id">National ID</option>
+                        <option value="medical_record">Medical Record</option>
+                        <option value="family_photo">Family Photo</option>
+                        <option value="legal_document">Legal Document</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <div class="camera-preview" id="cameraPreview">
+                        <video id="cameraVideo" autoplay playsinline></video>
+                        <canvas id="cameraCanvas" style="display: none;"></canvas>
+                    </div>
+                    <div class="camera-controls">
+                        <button class="camera-capture" id="captureBtn">Capture</button>
+                        <button class="camera-cancel" id="cancelCapture">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Family Page -->
+        <div class="page" id="familyPage">
+            <div class="page-header">
+                <button class="back-btn" data-page="home">←</button>
+                <h2>Family Search</h2>
+            </div>
+            <div class="family-container">
+                <div class="profile-section">
+                    <h3>My Profile</h3>
+                    <form id="profileForm" class="profile-form">
+                        <input type="text" id="profileName" placeholder="Full Name" required>
+                        <input type="text" id="profileOrigin" placeholder="City/Country of Origin">
+                        <input type="text" id="profileLocation" placeholder="Current Location">
+                        <textarea id="profileFamily" placeholder="Family members you're looking for" rows="3"></textarea>
+                        <button type="submit" class="save-profile-btn">Save Profile</button>
+                    </form>
+                </div>
+                <div class="search-section">
+                    <h3>Search for Family</h3>
+                    <div class="search-form">
+                        <input type="text" id="familySearch" placeholder="Enter name or location">
+                        <button class="search-btn" id="searchFamilyBtn">Search</button>
+                    </div>
+                    <div class="search-results" id="searchResults">
+                        <!-- Results will appear here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Medical Page -->
+        <div class="page" id="medicalPage">
+            <div class="page-header">
+                <button class="back-btn" data-page="home">←</button>
+                <h2>Medical Guide</h2>
+            </div>
+            <div class="medical-container">
+                <div class="symptom-checker">
+                    <h3>Symptom Checker</h3>
+                    <div class="symptom-list">
+                        <button class="symptom-btn" data-condition="fever">
+                            <span class="symptom-icon">🌡️</span>
+                            <span>Fever / High Temperature</span>
+                        </button>
+                        <button class="symptom-btn" data-condition="bleeding">
+                            <span class="symptom-icon">🩸</span>
+                            <span>Bleeding / Wounds</span>
+                        </button>
+                        <button class="symptom-btn" data-condition="breathing">
+                            <span class="symptom-icon">😮‍💨</span>
+                            <span>Breathing Problems</span>
+                        </button>
+                        <button class="symptom-btn" data-condition="pain">
+                            <span class="symptom-icon">😣</span>
+                            <span>Severe Pain</span>
+                        </button>
+                        <button class="symptom-btn" data-condition="diarrhea">
+                            <span class="symptom-icon">🚽</span>
+                            <span>Diarrhea / Vomiting</span>
+                        </button>
+                        <button class="symptom-btn" data-condition="pregnancy">
+                            <span class="symptom-icon">🤰</span>
+                            <span>Pregnancy Issues</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="medical-advice" id="medicalAdvice" style="display: none;">
+                    <!-- Medical advice will be shown here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Legal Rights Page -->
+        <div class="page" id="legalPage">
+            <div class="page-header">
+                <button class="back-btn" data-page="home">←</button>
+                <h2>Legal Rights</h2>
+            </div>
+            <div class="legal-container">
+                <div class="language-selector" style="text-align: center; margin-bottom: 20px;">
+                    <select id="legalLanguageSelect" onchange="app.setLegalLanguage(this.value)" style="padding: 8px 12px; font-size: 16px; border-radius: 4px;">
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                        <option value="ar">العربية</option>
+                        <option value="ur">اردو</option>
+                        <option value="ps">پښتو</option>
+                        <option value="es">Español</option>
+                        <option value="so">Soomaali</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </div>
+                <div class="rights-categories">
+                    <button class="rights-btn" data-right="asylum">
+                        <h4>Asylum Rights</h4>
+                        <p>Your rights when seeking asylum</p>
+                    </button>
+                    <button class="rights-btn" data-right="detention">
+                        <h4>If Detained</h4>
+                        <p>Rights during detention</p>
+                    </button>
+                    <button class="rights-btn" data-right="interpreter">
+                        <h4>Interpreter Rights</h4>
+                        <p>Right to translation services</p>
+                    </button>
+                    <button class="rights-btn" data-right="children">
+                        <h4>Children's Rights</h4>
+                        <p>Special protections for minors</p>
+                    </button>
+                    <button class="rights-btn" data-right="medical">
+                        <h4>Medical Rights</h4>
+                        <p>Access to healthcare</p>
+                    </button>
+                    <button class="rights-btn" data-right="legal_aid">
+                        <h4>Legal Aid</h4>
+                        <p>Free legal assistance</p>
+                    </button>
+                </div>
+                <div class="rights-details" id="rightsDetails" style="display: none;">
+                    <!-- Rights details will be shown here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Page -->
+        <div class="page" id="chatPage">
+            <div class="page-header">
+                <button class="back-btn" data-page="home">←</button>
+                <h2>Speak to Gemma</h2>
+                <div class="ai-status" id="aiStatus">
+                    <span class="status-icon">📡</span>
+                    <span class="status-text">Offline</span>
+                </div>
+            </div>
+            
+            <div class="chat-container">
+                <div class="chat-instructions">
+                    <p>💬 Ask Gemma for humanitarian guidance, safety advice, or information about legal rights and medical assistance.</p>
+                    <p>🌍 Gemma will detect your language and respond accordingly.</p>
+                    <p>⚠️ <strong>Important:</strong> Always verify critical information with professional aid workers when possible.</p>
+                </div>
+
+                <div class="chat-input-section">
+                    <div class="input-group">
+                        <textarea 
+                            id="chatInput" 
+                            placeholder="Type your message to Gemma here..." 
+                            rows="3"
+                            class="chat-input"
+                        ></textarea>
+                        <button id="keyboardToggleChat" class="keyboard-btn">⌨️ Show Keyboard</button>
+                    </div>
+                    
+                    <div id="keyboardContainerChat" class="keyboard-container" style="display: none;">
+                        <!-- Virtual keyboard will be inserted here -->
+                    </div>
+                    
+                    <button id="sendChatBtn" class="send-btn">Send Message</button>
+                </div>
+
+                <div class="chat-response-section">
+                    <div id="chatResponse" class="chat-response" style="display: none;">
+                        <div class="response-header">
+                            <span class="response-label">Gemma's Response:</span>
+                            <span class="language-badge" id="detectedLanguage"></span>
+                            <span class="response-time" id="chatResponseTime"></span>
+                        </div>
+                        <div class="response-content" id="chatResponseContent"></div>
+                        <div class="response-footer">
+                            <p class="safety-notice">⚠️ Remember: This is AI guidance. For critical situations, contact professional aid workers or emergency services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gemmorandum Page -->
+        <div class="page" id="gemmorandumPage">
+            <div class="page-header">
+                <button class="back-btn" data-page="home">←</button>
+                <h2>Gemmorandum</h2>
+                <div class="ai-status">
+                    <span class="status-icon">📡</span>
+                    <span class="status-text">Offline</span>
+                </div>
+            </div>
+            
+            <div class="gemmorandum-container">
+                <!-- Error Message Display -->
+                <div class="error-message" id="errorMessage" style="display: none; background-color: #ff5252; color: white; padding: 12px; border-radius: 4px; margin-bottom: 20px;">
+                    <span class="error-icon">⚠️</span>
+                    <span class="error-text"></span>
+                </div>
+                
+                <div class="form-capture-section" id="form-capture-section">
+                    <h3>📋 Form Assistant</h3>
+                    <p>Get help completing important forms with AI guidance</p>
+                    
+                    <div class="capture-methods">
+                        <button class="capture-btn" id="captureFormBtn">
+                            <span class="capture-icon">📷</span>
+                            <span>Capture Form</span>
+                        </button>
+                        <button class="capture-btn" id="manualFormBtn">
+                            <span class="capture-icon">✍️</span>
+                            <span>Manual Entry</span>
+                        </button>
+                    </div>
+                    
+                    <!-- File Upload Option -->
+                    <div style="margin-top: 20px; text-align: center;">
+                        <p style="margin-bottom: 10px; color: #666;">Or upload a photo of your form:</p>
+                        <input type="file" id="formImageUpload" accept="image/*" style="display: none;">
+                        <button onclick="document.getElementById('formImageUpload').click()" class="capture-btn" style="background-color: #f0f0f0; color: #333;">
+                            <span class="capture-icon">📁</span>
+                            <span>Upload Photo</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-camera-section" id="formCameraSection" style="display: none;">
+                    <div class="camera-preview">
+                        <video id="formCameraVideo" autoplay playsinline></video>
+                        <canvas id="formCameraCanvas" style="display: none;"></canvas>
+                    </div>
+                    <div class="camera-controls">
+                        <button class="camera-capture" id="captureFormPhoto">Capture</button>
+                        <button class="camera-cancel" id="cancelFormCapture">Cancel</button>
+                    </div>
+                    <div class="ocr-progress" id="ocrProgress" style="display: none;">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="ocrProgressFill"></div>
+                        </div>
+                        <p class="progress-text" id="ocrProgressText">Processing image...</p>
+                    </div>
+                </div>
+                
+                <!-- Vision Processing Progress -->
+                <div class="vision-progress" id="visionProgress" style="display: none; margin: 20px; text-align: center;">
+                    <h4>Processing Image...</h4>
+                    <div class="progress-bar" style="width: 100%; height: 20px; background-color: #f0f0f0; border-radius: 10px; overflow: hidden; margin: 10px 0;">
+                        <div class="progress-fill" id="visionProgressFill" style="height: 100%; background-color: #2196F3; width: 0%; transition: width 0.3s ease;"></div>
+                    </div>
+                    <p class="progress-text" id="visionProgressText" style="color: #666;">Preparing image for analysis...</p>
+                </div>
+
+                <div class="form-conversation-section" id="formConversationSection" style="display: none;">
+                    <div class="conversation-header">
+                        <h3>Form Guidance</h3>
+                        <div class="form-info" id="formInfo">
+                            <span class="form-type" id="formType">Unknown Form</span>
+                            <span class="progress-indicator" id="formProgress">0/0 fields</span>
+                        </div>
+                    </div>
+                    
+                    <div class="conversation-messages" id="conversationMessages">
+                        <!-- Messages will appear here -->
+                    </div>
+                    
+                    <div class="conversation-input">
+                        <div class="input-group">
+                            <textarea 
+                                id="formInput" 
+                                placeholder="Type your response here..."
+                                rows="3"
+                                class="form-input"
+                            ></textarea>
+                            <button id="keyboardToggleForm" class="keyboard-btn">⌨️ Show Keyboard</button>
+                        </div>
+                        
+                        <div id="keyboardContainerForm" class="keyboard-container" style="display: none;">
+                            <!-- Virtual keyboard will be inserted here -->
+                        </div>
+                        
+                        <div class="input-actions">
+                            <button id="sendFormResponse" class="send-btn">Send</button>
+                            <button id="skipFormField" class="skip-btn">Skip</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-summary-section" id="formSummarySection" style="display: none;">
+                    <h3>📝 Form Summary</h3>
+                    <div class="summary-content" id="summaryContent">
+                        <!-- Summary will appear here -->
+                    </div>
+                    <div class="summary-actions">
+                        <button id="exportForm" class="export-btn">Export Form</button>
+                        <button id="startNewForm" class="new-form-btn">New Form</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GemPath Page -->
+        <div class="page" id="gempathPage">
+            <div class="page-header">
+                <button class="back-btn" data-page="home">←</button>
+                <h2>GemPath - Family Reunification</h2>
+                <div class="ai-status">
+                    <span class="status-icon">📡</span>
+                    <span class="status-text">Offline</span>
+                </div>
+            </div>
+            
+            <div class="gempath-container">
+                <!-- Interview Mode -->
+                <div class="gempath-interview-section" id="gemPathInterviewSection">
+                    <div class="section-header">
+                        <h3>🎤 Child Interview</h3>
+                        <p>Conduct structured interviews to help reunite families</p>
+                    </div>
+                    
+                    <div class="interview-setup">
+                        <div class="language-selection">
+                            <label for="gemPathLanguage">Interview Language:</label>
+                            <select id="gemPathLanguage" class="language-dropdown">
+                                <option value="en">English</option>
+                                <option value="ar">العربية (Arabic)</option>
+                                <option value="fa">فارسی (Persian)</option>
+                                <option value="ur">اردو (Urdu)</option>
+                                <option value="ps">پښتو (Pashto)</option>
+                                <option value="so">Soomaali (Somali)</option>
+                                <option value="fr">Français (French)</option>
+                                <option value="ti">ትግርኛ (Tigrinya)</option>
+                                <option value="sw">Kiswahili (Swahili)</option>
+                                <option value="am">አማርኛ (Amharic)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="interview-instructions">
+                            <h4>Instructions for Aid Workers:</h4>
+                            <ul>
+                                <li>🔇 Ensure quiet environment for recording</li>
+                                <li>🧸 Make child comfortable with toys/snacks</li>
+                                <li>⏸️ Take breaks if child becomes distressed</li>
+                                <li>🎯 Focus on unique family identifiers</li>
+                                <li>📝 Complete at least 5 questions minimum</li>
+                            </ul>
+                        </div>
+                        
+                        <button id="startInterviewBtn" class="start-interview-btn">
+                            🎤 Start Interview
+                        </button>
+                    </div>
+                    
+                    <div class="interview-interface" id="gemPathQuestionContainer" style="display: none;">
+                        <!-- Interview questions will be loaded here -->
+                    </div>
+                    
+                    <div class="interview-results" id="gemPathResults" style="display: none;">
+                        <!-- Interview results will be shown here -->
+                    </div>
+                </div>
+                
+                <!-- Search Mode -->
+                <div class="gempath-search-section" id="gemPathSearchSection" style="margin-top: 30px;">
+                    <div class="section-header">
+                        <h3>🔍 Parent Search</h3>
+                        <p>Search for matching child interviews</p>
+                    </div>
+                    
+                    <div class="search-interface">
+                        <div class="search-form">
+                            <input type="text" 
+                                   id="gemPathSearchQuery" 
+                                   placeholder="Describe your child or family details..."
+                                   class="search-input">
+                            <button id="gemPathSearchBtn" class="search-btn">
+                                🔍 Search for Matches
+                            </button>
+                        </div>
+                        
+                        <div class="search-tips">
+                            <h4>Search Tips:</h4>
+                            <ul>
+                                <li>Include physical descriptions</li>
+                                <li>Mention hometown or landmarks</li>
+                                <li>Describe family games or songs</li>
+                                <li>Include any unique family traits</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="search-results" id="gemPathSearchResults">
+                        <!-- Search results will be displayed here -->
+                    </div>
+                </div>
+                
+                <!-- Saved Sessions -->
+                <div class="gempath-sessions-section" style="margin-top: 30px;">
+                    <div class="section-header">
+                        <h3>📋 Saved Sessions</h3>
+                        <p>View and manage interview sessions</p>
+                    </div>
+                    
+                    <div class="sessions-list" id="gemPathSessionsList">
+                        <p class="empty-message">No interview sessions yet. Start an interview to begin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Learn Together Page -->
+        <div class="page" id="learn-togetherPage">
+            <div class="page-header">
+                <button class="back-btn" data-page="home">←</button>
+                <h2>📚 Learn Together</h2>
+            </div>
+            
+            <div class="education-container">
+                <div class="welcome-section">
+                    <p>Support your child's education with structured lessons and AI teaching assistance.</p>
+                </div>
+                
+                <!-- Child Age Selection -->
+                <div class="age-selection-section">
+                    <div class="age-selector">
+                        <label for="childAge">Child's Age:</label>
+                        <select id="childAge" class="age-dropdown" onchange="app.updateAgeGroupInfo(); app.loadEducationSubjects()">
+                            <option value="3">3 years old</option>
+                            <option value="4">4 years old</option>
+                            <option value="5">5 years old</option>
+                            <option value="6">6 years old</option>
+                            <option value="7" selected>7 years old</option>
+                            <option value="8">8 years old</option>
+                            <option value="9">9 years old</option>
+                            <option value="10">10 years old</option>
+                        </select>
+                    </div>
+                    <div class="age-info">
+                        <p id="ageGroupInfo">Age Group: 5-7 years</p>
+                    </div>
+                </div>
+                
+                <!-- Available Subjects -->
+                <div class="subjects-section">
+                    <h3>Available Subjects</h3>
+                    
+                    <!-- Loading State -->
+                    <div class="subjects-loading" id="subjectsLoading" style="display: none;">
+                        <div class="loading-spinner"></div>
+                        <p>Loading curriculum...</p>
+                    </div>
+                    
+                    <!-- Error State -->
+                    <div class="subjects-error" id="subjectsError" style="display: none;">
+                        <div class="error-message">
+                            <span class="error-icon">⚠️</span>
+                            <p>Unable to load full curriculum. Using basic lessons.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Subjects Grid -->
+                    <div class="subjects-grid" id="educationSubjects">
+                        <!-- Subjects will be loaded dynamically -->
+                    </div>
+                </div>
+                
+                <!-- Current Lesson -->
+                <div class="current-lesson-section" style="margin-top: 30px;">
+                    <div id="currentLesson" style="display: none;">
+                        <!-- Current lesson content will be displayed here -->
+                    </div>
+                </div>
+                
+                <!-- Teaching Help -->
+                <div class="teaching-help-section" style="margin-top: 20px;">
+                    <div id="teachingHelp" style="display: none;">
+                        <!-- Teaching help will be displayed here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Exchange Page -->
+        <div class="page" id="skills-exchangePage">
+            <div class="page-header">
+                <button class="back-btn" data-page="home">←</button>
+                <h2>🤝 Skills Exchange</h2>
+            </div>
+            
+            <div class="skills-container">
+                <div class="welcome-section">
+                    <p>Discover your valuable skills and connect with others in your community for mutual support.</p>
+                </div>
+                
+                <!-- Skills Discovery Section -->
+                <div class="discovery-section">
+                    <div class="section-header">
+                        <h3>🔍 Discover Your Skills</h3>
+                        <p>AI-powered conversation to identify your valuable abilities</p>
+                    </div>
+                    
+                    <div class="discovery-actions">
+                        <button class="primary-btn" onclick="app.startSkillsDiscovery()">Start Skills Discovery</button>
+                    </div>
+                    
+                    <div id="skillsDiscovery">
+                        <!-- Discovery conversation will appear here -->
+                    </div>
+                </div>
+                
+                <!-- Discovered Skills -->
+                <div class="discovered-skills-section" style="margin-top: 30px;">
+                    <div class="section-header">
+                        <h3>✨ Your Skills</h3>
+                    </div>
+                    <div id="discoveredSkills">
+                        <!-- Discovered skills will be displayed here -->
+                    </div>
+                </div>
+                
+                <!-- Registration Status -->
+                <div class="registration-section" style="margin-top: 30px;">
+                    <div class="section-header">
+                        <h3>📋 Registration Status</h3>
+                    </div>
+                    <div id="registrationStatus">
+                        <!-- Registration status will be displayed here -->
+                    </div>
+                </div>
+                
+                <!-- Skills Search -->
+                <div class="search-section" style="margin-top: 30px;">
+                    <div class="section-header">
+                        <h3>🔎 Find Skills in Community</h3>
+                        <p>Search for people who can help with specific needs</p>
+                    </div>
+                    
+                    <div class="search-form">
+                        <select id="skillCategory" class="form-select">
+                            <option value="">Select category...</option>
+                            <option value="essential_services">Essential Services</option>
+                            <option value="education_childcare">Education & Childcare</option>
+                            <option value="technical_repair">Technical & Repair</option>
+                            <option value="creative_cultural">Creative & Cultural</option>
+                            <option value="business_admin">Business & Administration</option>
+                        </select>
+                        <input type="text" id="skillDescription" placeholder="Describe what you need help with..." class="form-input">
+                        <button onclick="app.searchCommunitySkills()" class="search-btn">Search</button>
+                    </div>
+                    
+                    <div id="skillsSearchResults">
+                        <!-- Search results will appear here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+        <div class="loading-spinner"></div>
+        <p class="loading-text">Processing...</p>
+    </div>
+
+    <!-- Install Prompt -->
+    <div class="install-prompt" id="installPrompt" style="display: none;">
+        <p>Install Refugee Connect for offline access</p>
+        <button class="install-btn" id="installBtn">Install</button>
+        <button class="dismiss-btn" id="dismissInstall">Not Now</button>
+    </div>
+
+    <!-- Third-party Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+    
+    <!-- Scripts - Load modules before app.js -->
+    <script src="pi-client-multimodal.js"></script>
+    <script src="virtual-keyboard.js"></script>
+    <script src="emergency-phrases.js"></script>
+    <script src="document-vault.js"></script>
+    <script src="medical-guide.js"></script>
+    <script src="legal-rights.js"></script>
+    <script src="emergency-contacts.js"></script>
+    <script src="gemmorandum-multimodal.js"></script>
+    <script src="gempath.js"></script>
+    <script src="capabilities.js"></script>
+    <!-- Note: Sustainable Living modules not included in competition submission -->
+    <script src="app.js"></script>
+    
+    <!-- Initialize App -->
+    <script>
+        // Initialize the app when DOM is loaded
+        document.addEventListener('DOMContentLoaded', async () => {
+            console.log('🎯 DOM loaded, initializing Refugee Connect app...');
+            window.app = new RefugeeConnectApp();
+            await window.app.initialize();
+        });
+    </script>
+</body>
+</html>

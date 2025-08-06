@@ -1,0 +1,60 @@
+{
+  "name": "Refugee Connect - Humanitarian AI Toolkit",
+  "short_name": "Refugee Connect",
+  "description": "Offline humanitarian toolkit with AI-powered assistance for refugees and displaced persons",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2196F3",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["humanitarian", "medical", "utilities"],
+  "lang": "en",
+  "dir": "auto",
+  "scope": "/",
+  "shortcuts": [
+    {
+      "name": "Emergency Phrases",
+      "short_name": "Emergency",
+      "description": "Access critical survival phrases",
+      "url": "/#emergency",
+      "icons": [{"src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==", "sizes": "96x96"}]
+    },
+    {
+      "name": "AI Translation",
+      "short_name": "Translate",
+      "description": "AI-powered translation assistance",
+      "url": "/#translate",
+      "icons": [{"src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==", "sizes": "96x96"}]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+      "sizes": "540x720",
+      "type": "image/png",
+      "label": "Home screen showing all humanitarian features"
+    },
+    {
+      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+      "sizes": "540x720",
+      "type": "image/png",
+      "label": "Emergency phrases in multiple languages"
+    }
+  ],
+  "prefer_related_applications": false,
+  "related_applications": []
+}
