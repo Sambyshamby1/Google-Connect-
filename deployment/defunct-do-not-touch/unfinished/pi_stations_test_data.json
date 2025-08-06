@@ -1,0 +1,115 @@
+{
+  "stations": [
+    {
+      "id": "north_gate",
+      "name": "North Gate Information Point",
+      "latitude": 32.4567,
+      "longitude": 35.8901,
+      "sector": "1",
+      "type": "primary",
+      "capacity": 500,
+      "last_sync": "2024-12-22T08:30:00Z",
+      "typical_bulletins": 45,
+      "contact": "Ahmed Hassan"
+    },
+    {
+      "id": "medical_tent_3",
+      "name": "Medical Center Pi Station",
+      "latitude": 32.4589,
+      "longitude": 35.8923,
+      "sector": "3",
+      "type": "medical",
+      "capacity": 300,
+      "last_sync": "2024-12-22T07:45:00Z",
+      "typical_bulletins": 65,
+      "priority_items": ["medical_alerts", "supply_requests"],
+      "contact": "Dr. Fatima Al-Rashid"
+    },
+    {
+      "id": "distribution_center",
+      "name": "Food Distribution Point",
+      "latitude": 32.4601,
+      "longitude": 35.8945,
+      "sector": "5",
+      "type": "distribution",
+      "capacity": 800,
+      "last_sync": "2024-12-22T09:00:00Z",
+      "typical_bulletins": 30,
+      "contact": "Mohammed Khalil"
+    },
+    {
+      "id": "sector_4_community",
+      "name": "Sector 4 Community Board",
+      "latitude": 32.4578,
+      "longitude": 35.8934,
+      "sector": "4",
+      "type": "community",
+      "capacity": 200,
+      "last_sync": "2024-12-21T16:30:00Z",
+      "typical_bulletins": 85,
+      "high_traffic_times": ["08:00-10:00", "16:00-18:00"],
+      "contact": "Community Leaders"
+    },
+    {
+      "id": "women_center",
+      "name": "Women's Resource Center",
+      "latitude": 32.4592,
+      "longitude": 35.8912,
+      "sector": "2",
+      "type": "specialized",
+      "capacity": 150,
+      "last_sync": "2024-12-22T10:15:00Z",
+      "typical_bulletins": 40,
+      "restricted_access": true,
+      "contact": "Amira Saeed"
+    },
+    {
+      "id": "school_board",
+      "name": "Camp School Notice Board",
+      "latitude": 32.4585,
+      "longitude": 35.8956,
+      "sector": "6",
+      "type": "education",
+      "capacity": 100,
+      "last_sync": "2024-12-22T07:00:00Z",
+      "typical_bulletins": 25,
+      "contact": "Education Coordinator"
+    },
+    {
+      "id": "sector_7_overflow",
+      "name": "Sector 7 New Arrivals",
+      "latitude": 32.4595,
+      "longitude": 35.8967,
+      "sector": "7",
+      "type": "temporary",
+      "capacity": 400,
+      "last_sync": "2024-12-21T22:00:00Z",
+      "typical_bulletins": 120,
+      "high_priority": true,
+      "notes": "High volume due to new arrivals",
+      "contact": "UNHCR Field Officer"
+    },
+    {
+      "id": "market_square",
+      "name": "Central Market Board",
+      "latitude": 32.4582,
+      "longitude": 35.8928,
+      "sector": "3",
+      "type": "commercial",
+      "capacity": 250,
+      "last_sync": "2024-12-22T11:00:00Z",
+      "typical_bulletins": 55,
+      "peak_days": ["friday", "sunday"],
+      "contact": "Market Committee"
+    }
+  ],
+  "metadata": {
+    "total_stations": 8,
+    "last_updated": "2024-12-22T12:00:00Z",
+    "camp_name": "Al-Zaatari Extension B",
+    "coordinate_system": "WGS84",
+    "sync_protocol_version": "2.1",
+    "average_daily_bulletins": 520,
+    "critical_stations": ["medical_tent_3", "sector_7_overflow"]
+  }
+}

@@ -1,0 +1,37 @@
+# Core dependencies
+numpy==1.24.3
+python-dotenv==1.0.0
+requests==2.31.0
+
+# Web framework
+Flask==3.0.0
+Flask-CORS==4.0.0
+Flask-SocketIO==5.3.5
+python-socketio==5.10.0
+
+# Database
+# SQLite is included in Python standard library
+
+# Drone control
+pymavlink==2.4.40
+pyserial==3.5
+
+# Image processing
+opencv-python-headless==4.8.1.78
+Pillow==10.0.1
+scipy==1.10.1
+scikit-image==0.21.0
+
+# Development and testing
+pytest==7.4.3
+pytest-cov==4.1.0
+black==23.11.0
+flake8==6.1.0
+
+# Optional: AI model support
+# llama-cpp-python==0.2.20  # Uncomment if using real Gemma model
+
+# Utilities
+paho-mqtt==1.6.1
+cryptography==41.0.7
+python-dateutil==2.8.2

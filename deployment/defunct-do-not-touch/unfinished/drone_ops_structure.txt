@@ -1,0 +1,81 @@
+drone_ops/
+├── docker-compose.yml
+├── README.md
+├── quick_demo.py
+├── requirements.txt
+├── .env.example
+├── config.py
+│
+├── flight_control/
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   ├── __init__.py
+│   ├── drone_interface.py
+│   ├── mavlink_drone.py
+│   ├── simulated_drone.py
+│   └── flight_controller.py
+│
+├── ai_analysis/
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   ├── __init__.py
+│   ├── gemma_analyzer.py
+│   ├── mock_gemma.py
+│   ├── image_processor.py
+│   └── thermal_analyzer.py
+│
+├── mission_planner/
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   ├── __init__.py
+│   ├── mission_types.py
+│   ├── route_optimizer.py
+│   ├── pi_sync_mission.py
+│   ├── disease_survey_mission.py
+│   └── intelligence_mission.py
+│
+├── api/
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   ├── __init__.py
+│   ├── app.py
+│   ├── routes.py
+│   └── websocket_handler.py
+│
+├── data_manager/
+│   ├── __init__.py
+│   ├── database.py
+│   ├── schemas.py
+│   └── encryption.py
+│
+├── dashboard/
+│   ├── index.html
+│   ├── styles.css
+│   ├── app.js
+│   └── assets/
+│       ├── drone-icon.svg
+│       └── camp-map.png
+│
+├── sample_outputs/
+│   ├── fever_outbreak_detected_2024_12_15.json
+│   ├── resource_distribution_analysis.json
+│   ├── population_movement_patterns.json
+│   └── family_search_bulletin.json
+│
+├── test_data/
+│   ├── camp_with_fever_cluster.dat
+│   ├── pi_stations.json
+│   └── sample_thermal_data.npy
+│
+├── tests/
+│   ├── __init__.py
+│   ├── test_full_mission.py
+│   ├── test_drone_interface.py
+│   ├── test_ai_analysis.py
+│   └── test_api.py
+│
+└── utils/
+    ├── __init__.py
+    ├── logger.py
+    ├── topics.py
+    └── validators.py

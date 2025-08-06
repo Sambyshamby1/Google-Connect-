@@ -1,0 +1,208 @@
+{
+  "sync_session": {
+    "session_id": "sync_20241222_1430",
+    "drone_id": "HDIS-001",
+    "timestamp": "2024-12-22T14:30:00Z",
+    "duration_seconds": 185,
+    "stations_synced": 8,
+    "total_bulletins": 347
+  },
+  
+  "priority_alerts": {
+    "missing_children": [
+      {
+        "bulletin_id": "MC_2024_1222_001",
+        "station_id": "sector_7_overflow",
+        "posted_at": "2024-12-22T08:15:00Z",
+        "urgency": "CRITICAL",
+        "child": {
+          "name": "Yasmin Al-Hamadi",
+          "age": 9,
+          "gender": "female",
+          "description": "Black hair, brown eyes, wearing blue dress with flowers",
+          "languages": ["Arabic", "basic English"],
+          "medical_needs": "Asthma inhaler required"
+        },
+        "last_seen": {
+          "time": "2024-12-21T18:30:00Z",
+          "location": "Near water point 3",
+          "with_whom": "Was with younger brother (found safe)",
+          "activity": "Collecting water for family"
+        },
+        "family_contact": {
+          "relationship": "Mother",
+          "name": "Fatima Al-Hamadi", 
+          "tent_location": "Sector 7, Row 12, Tent 47",
+          "phone": "Available at medical tent"
+        },
+        "search_status": "ACTIVE",
+        "search_teams_notified": true
+      },
+      {
+        "bulletin_id": "MC_2024_1222_002",
+        "station_id": "north_gate",
+        "posted_at": "2024-12-22T11:00:00Z",
+        "urgency": "HIGH",
+        "child": {
+          "name": "Ahmad Rashidi",
+          "age": 12,
+          "gender": "male",
+          "description": "Tall for age, scar on left hand, wearing Manchester United shirt",
+          "languages": ["Kurdish", "Arabic"],
+          "special_needs": "Hearing impaired - uses sign language"
+        },
+        "last_seen": {
+          "time": "2024-12-22T07:00:00Z",
+          "location": "Camp school",
+          "with_whom": "Left for school but never arrived",
+          "activity": "Walking to morning classes"
+        },
+        "family_contact": {
+          "relationship": "Uncle (guardian)",
+          "name": "Hassan Rashidi",
+          "tent_location": "Sector 1, Row 3, Tent 15",
+          "phone": "+90 XXX XXX XXXX"
+        },
+        "search_status": "ACTIVE",
+        "additional_info": "May have tried to visit aunt in Sector 8"
+      }
+    ],
+    
+    "medical_emergencies": [
+      {
+        "bulletin_id": "ME_2024_1222_001",
+        "station_id": "medical_tent_3",
+        "posted_at": "2024-12-22T13:45:00Z",
+        "type": "supply_critical",
+        "urgency": "CRITICAL",
+        "details": {
+          "medication": "Insulin",
+          "current_stock": "12 vials",
+          "daily_need": "8 vials",
+          "patients_affected": 47,
+          "critical_patients": 12
+        },
+        "action_required": "Emergency resupply needed within 36 hours",
+        "contact": "Dr. Fatima Al-Rashid"
+      }
+    ]
+  },
+  
+  "family_reunification": {
+    "active_searches": [
+      {
+        "bulletin_id": "FS_2024_1222_003",
+        "station_id": "women_center",
+        "seeker": {
+          "name": "Mariam Hassan",
+          "age": 45,
+          "relationship": "Mother",
+          "origin": "Aleppo"
+        },
+        "seeking": {
+          "name": "Layla Hassan",
+          "age": 22,
+          "relationship": "Daughter",
+          "last_contact": "2024-11-15",
+          "last_known_location": "Turkish border camp"
+        },
+        "verification_code": "FS2024-H4X7M",
+        "red_cross_notified": true
+      }
+    ],
+    
+    "successful_reunifications": [
+      {
+        "bulletin_id": "FS_2024_1220_017",
+        "resolved_date": "2024-12-22T10:00:00Z",
+        "family_members": 3,
+        "separation_duration_days": 127,
+        "reunion_location": "Sector 4 community center"
+      }
+    ]
+  },
+  
+  "community_messages": {
+    "lost_documents": [
+      {
+        "item": "Syrian passport",
+        "owner": "Unknown - photo of child inside",
+        "found_location": "Near market",
+        "holding_location": "North gate security"
+      }
+    ],
+    
+    "community_announcements": [
+      {
+        "type": "wedding",
+        "message": "Celebration for Ahmed and Zahra - All welcome Saturday 4pm",
+        "location": "Community center"
+      },
+      {
+        "type": "skills_sharing",
+        "message": "English classes for children starting Monday",
+        "teacher": "Former professor from Damascus University",
+        "location": "School tent B"
+      }
+    ],
+    
+    "resource_sharing": [
+      {
+        "offering": "Baby clothes (6-12 months)",
+        "condition": "Good condition",
+        "contact": "Tent 4-23"
+      },
+      {
+        "needed": "Wheelchair for elderly man",
+        "details": "Leg amputation, needs mobility aid",
+        "contact": "Medical tent can coordinate"
+      }
+    ]
+  },
+  
+  "ai_analysis": {
+    "bulletin_patterns": {
+      "missing_persons_trend": "300% increase in missing children reports",
+      "likely_cause": "New arrivals unfamiliar with camp layout",
+      "recommendation": "Implement buddy system for new families"
+    },
+    
+    "community_health": {
+      "sentiment": "Positive despite challenges",
+      "social_cohesion": "Strong mutual aid networks emerging",
+      "concerns": [
+        "Language barriers with new Kurdish arrivals",
+        "Youth unemployment leading to restlessness"
+      ]
+    },
+    
+    "urgent_interventions": [
+      {
+        "issue": "Missing children spike",
+        "action": "Deploy additional security patrols",
+        "timeline": "Immediate"
+      },
+      {
+        "issue": "Medical supply shortage",
+        "action": "Emergency procurement authorization",
+        "timeline": "24 hours"
+      }
+    ]
+  },
+  
+  "transmission_stats": {
+    "bulletins_per_station": {
+      "north_gate": 45,
+      "medical_tent_3": 67,
+      "distribution_center": 28,
+      "sector_4_community": 89,
+      "women_center": 41,
+      "school_board": 23,
+      "sector_7_overflow": 124,
+      "market_square": 30
+    },
+    "data_volume_mb": 12.7,
+    "sync_quality": "Good - 0 errors",
+    "next_scheduled_sync": "2024-12-23T06:00:00Z"
+  }
+}

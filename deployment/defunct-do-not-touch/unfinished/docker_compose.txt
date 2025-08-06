@@ -1,0 +1,97 @@
+version: '3.8'
+
+services:
+  flight_controller:
+    build: ./flight_control
+    container_name: drone_flight_control
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0  # PX4 connection
+    environment:
+      - DRONE_MODE=${DRONE_MODE:-simulated}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+    volumes:
+      - ./logs:/app/logs
+      - ./test_data:/app/test_data
+    networks:
+      - drone_net
+    restart: unless-stopped
+
+  gemma_ai:
+    build: ./ai_analysis
+    container_name: drone_ai_analysis
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - MODEL_PATH=/models/gemma-3n-15b.gguf
+      - USE_MOCK=${USE_MOCK_AI:-true}
+    volumes:
+      - ./models:/models
+      - ./sample_outputs:/app/sample_outputs
+      - shared_data:/app/shared_data
+    networks:
+      - drone_net
+    restart: unless-stopped
+
+  mission_planner:
+    build: ./mission_planner
+    container_name: drone_mission_planner
+    depends_on:
+      - flight_controller
+      - gemma_ai
+    environment:
+      - CAMP_BOUNDARY_FILE=/app/config/camp_boundary.json
+      - PI_STATIONS_FILE=/app/test_data/pi_stations.json
+    volumes:
+      - ./config:/app/config
+      - ./test_data:/app/test_data
+      - shared_data:/app/shared_data
+    networks:
+      - drone_net
+    restart: unless-stopped
+
+  api:
+    build: ./api
+    container_name: drone_api
+    ports:
+      - "8000:8000"
+      - "8001:8001"  # WebSocket port
+    depends_on:
+      - mission_planner
+      - database
+    environment:
+      - DATABASE_URL=sqlite:////app/data/humanitarian_intel.db
+      - API_KEY=${DRONE_API_KEY:-demo_key_replace_in_prod}
+    volumes:
+      - ./data:/app/data
+      - shared_data:/app/shared_data
+    networks:
+      - drone_net
+    restart: unless-stopped
+
+  database:
+    image: alpine:latest
+    container_name: drone_database
+    command: ["sh", "-c", "mkdir -p /data && touch /data/humanitarian_intel.db && tail -f /dev/null"]
+    volumes:
+      - ./data:/data
+    networks:
+      - drone_net
+
+  dashboard:
+    image: nginx:alpine
+    container_name: drone_dashboard
+    ports:
+      - "8080:80"
+    volumes:
+      - ./dashboard:/usr/share/nginx/html
+    networks:
+      - drone_net
+    restart: unless-stopped
+
+networks:
+  drone_net:
+    driver: bridge
+
+volumes:
+  shared_data:
+    driver: local

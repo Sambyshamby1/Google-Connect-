@@ -1,0 +1,271 @@
+{
+  "mission_id": "population_analysis_20241222_0600",
+  "timestamp": "2024-12-22T06:00:00Z",
+  "mission_type": "population_movement_analysis",
+  "drone_id": "HDIS-001",
+  "analysis_model": "gemma-3n-15b",
+  "observation_period": "7_days",
+  "comparison_baseline": "2024-12-15",
+  
+  "population_overview": {
+    "current_total": 5361,
+    "change_from_baseline": "+127",
+    "percentage_change": "+2.43%",
+    "daily_average_change": "+18",
+    "sectors_analyzed": 8,
+    "confidence_score": 0.91
+  },
+  
+  "sector_analysis": [
+    {
+      "sector_id": "1",
+      "current_population": 623,
+      "change": "-12",
+      "density_status": "OPTIMAL",
+      "infrastructure_strain": "LOW"
+    },
+    {
+      "sector_id": "4",
+      "current_population": 892,
+      "change": "+89",
+      "density_status": "CRITICAL",
+      "infrastructure_strain": "SEVERE",
+      "issues": [
+        "Latrine ratio 1:67 (standard 1:20)",
+        "Shelter spacing below minimum",
+        "Fire lanes blocked"
+      ]
+    },
+    {
+      "sector_id": "7",
+      "current_population": 1243,
+      "change": "+143",
+      "density_status": "DANGEROUS",
+      "infrastructure_strain": "CRITICAL",
+      "issues": [
+        "312% above safe density",
+        "Disease transmission risk HIGH",
+        "Emergency evacuation impossible"
+      ]
+    }
+  ],
+  
+  "movement_patterns": {
+    "internal_migration": {
+      "primary_flow": {
+        "from": ["Sector 1", "Sector 2"],
+        "to": ["Sector 4", "Sector 7"],
+        "volume": 78,
+        "reason": "Proximity to new food distribution point"
+      },
+      "secondary_flows": [
+        {
+          "from": "Sector 3",
+          "to": "Sector 8",
+          "volume": 23,
+          "reason": "Family reunification"
+        }
+      ]
+    },
+    
+    "new_arrivals": {
+      "entry_points": {
+        "north_gate": 89,
+        "east_checkpoint": 34,
+        "informal_entry": 4
+      },
+      "origin_regions": [
+        {"region": "Idlib Province", "count": 67},
+        {"region": "Aleppo Rural", "count": 43},
+        {"region": "Unknown", "count": 17}
+      ],
+      "demographics": {
+        "families": 31,
+        "unaccompanied_minors": 7,
+        "single_adults": 89,
+        "elderly": 12
+      }
+    },
+    
+    "departures": {
+      "confirmed_exits": 0,
+      "suspected_departures": 12,
+      "missing_persons": 3
+    }
+  },
+  
+  "ai_behavioral_analysis": {
+    "clustering_patterns": {
+      "ethnic_grouping": {
+        "detected": true,
+        "description": "New Idlib arrivals forming distinct cluster in Sector 7 East",
+        "integration_level": "LOW",
+        "tension_risk": "MEDIUM"
+      },
+      "family_networks": {
+        "expansion_rate": "Normal",
+        "cross_sector_ties": 234,
+        "stability_indicator": "POSITIVE"
+      }
+    },
+    
+    "social_dynamics": {
+      "community_cohesion_score": 6.2,
+      "tension_indicators": [
+        "Resource competition between old/new residents",
+        "Language barriers with new arrivals",
+        "Informal leadership struggles in Sector 4"
+      ],
+      "positive_developments": [
+        "Shared childcare networks emerging",
+        "Cross-group market established",
+        "Youth soccer league bridging communities"
+      ]
+    },
+    
+    "vulnerability_assessment": {
+      "at_risk_populations": {
+        "unaccompanied_minors": {
+          "count": 47,
+          "protection_coverage": "63%",
+          "priority": "URGENT"
+        },
+        "elderly_isolated": {
+          "count": 89,
+          "support_access": "41%",
+          "medical_needs": "HIGH"
+        },
+        "pregnant_women": {
+          "count": 156,
+          "prenatal_care_access": "72%",
+          "nutrition_support": "INADEQUATE"
+        }
+      }
+    }
+  },
+  
+  "predictive_modeling": {
+    "7_day_forecast": {
+      "expected_arrivals": {
+        "estimate": 95,
+        "confidence": 0.78,
+        "factors": ["Conflict escalation in origin", "Winter weather"]
+      },
+      "internal_movement": {
+        "sector_4_risk": "Overflow likely within 5 days",
+        "sector_7_risk": "Critical failure within 3 days",
+        "recommended_redistribution": 200
+      }
+    },
+    
+    "30_day_projection": {
+      "total_population": 5680,
+      "critical_thresholds": [
+        "Water system capacity exceeded",
+        "Medical facilities overwhelmed",
+        "Shelter shortage for 300+"
+      ],
+      "intervention_required": "IMMEDIATE"
+    },
+    
+    "seasonal_factors": {
+      "winter_impact": {
+        "indoor_clustering": "+40%",
+        "disease_risk": "ELEVATED",
+        "heating_demand": "3x current capacity"
+      }
+    }
+  },
+  
+  "infrastructure_impact": {
+    "current_strain": {
+      "water_points": "127% capacity",
+      "latrines": "89% functional",
+      "health_posts": "OVERWHELMED",
+      "schools": "234 children without access"
+    },
+    
+    "failure_risks": {
+      "imminent": [
+        "Sector 7 sanitation system",
+        "Water Point 3 pump"
+      ],
+      "high_risk": [
+        "Power grid in Sectors 4-5",
+        "Main access road erosion"
+      ]
+    },
+    
+    "resource_gaps": {
+      "immediate_needs": {
+        "tents": 85,
+        "blankets": 420,
+        "hygiene_kits": 127
+      },
+      "weekly_requirements": {
+        "food_increase": "12%",
+        "water_increase": "18%",
+        "medical_supplies": "25%"
+      }
+    }
+  },
+  
+  "recommendations": {
+    "emergency_actions": [
+      {
+        "action": "Open overflow area between Sectors 5-6",
+        "capacity": 300,
+        "timeline": "48 hours",
+        "resources": "85 tents, basic infrastructure"
+      },
+      {
+        "action": "Relocate 200 from Sector 7",
+        "method": "Voluntary with incentives",
+        "timeline": "72 hours",
+        "support": "Moving assistance, priority services"
+      },
+      {
+        "action": "Fast-track infrastructure in Sector 4",
+        "focus": "Latrines, water points",
+        "timeline": "1 week",
+        "cost": "$15,000"
+      }
+    ],
+    
+    "population_management": [
+      "Implement arrival processing center",
+      "Create integration support program",
+      "Establish sector population caps",
+      "Develop early warning system",
+      "Strengthen registration database"
+    ],
+    
+    "social_interventions": [
+      "Community dialogue sessions",
+      "Cultural orientation for new arrivals",
+      "Conflict mediation training",
+      "Youth engagement programs",
+      "Women's safety initiatives"
+    ]
+  },
+  
+  "monitoring_requirements": {
+    "daily": [
+      "Sector density checks",
+      "New arrival registration",
+      "Infrastructure functionality"
+    ],
+    "weekly": [
+      "Full population count",
+      "Social tension assessment",
+      "Resource consumption analysis"
+    ],
+    "triggers_for_alert": [
+      "Any sector >95% capacity",
+      "Infrastructure failure",
+      "Violence incidents",
+      "Disease outbreak",
+      "Mass arrival event (>50/day)"
+    ]
+  }
+}

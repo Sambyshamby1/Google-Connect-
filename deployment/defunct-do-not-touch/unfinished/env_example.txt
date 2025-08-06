@@ -1,0 +1,26 @@
+# Drone Configuration
+DRONE_MODE=simulated  # Options: simulated, real
+LOG_LEVEL=INFO       # Options: DEBUG, INFO, WARNING, ERROR
+
+# AI Configuration
+USE_MOCK_AI=true     # Set to false if you have the actual Gemma model
+MODEL_PATH=/models/gemma-3n-15b.gguf
+
+# API Configuration
+DRONE_API_KEY=your_secure_api_key_here
+SECRET_KEY=your_secret_key_for_sessions
+
+# Database
+DATABASE_URL=sqlite:///data/humanitarian_intel.db
+
+# Camp Configuration
+CAMP_BOUNDARY_FILE=/app/config/camp_boundary.json
+PI_STATIONS_FILE=/app/test_data/pi_stations.json
+
+# Testing
+TESTING=false
+EMIT_TEST_ALERTS=true  # For demo dashboard
+
+# Safety Overrides (use with caution)
+SKIP_PREFLIGHT_CHECKS=false
+ALLOW_LOW_BATTERY_FLIGHT=false

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humanitarian Drone Operations Center</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --dark: #1f2937;
+            --light: #f3f4f6;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--dark);
+            color: var(--white);
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+            padding: 1.5rem 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            animation: hover 3s ease-in-out infinite;
+        }
+
+        @keyframes hover {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .status-bar {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .status-indicator {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--success);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+
+        /* Mission Panel */
+        .panel {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 1.5rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .panel-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        /* Mission Map */
+        .mission-map {
+            background: linear-gradient(45deg, #1a1a2e 0%, #16213e 100%);
+            border-radius: 12px;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+        }
+
+        .map-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+            pointer-events: none;
+        }
+
+        .drone-position {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: var(--primary);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 20px rgba(37, 99, 235, 0.8);
+            animation: drone-move 10s linear infinite;
+        }
+
+        @keyframes drone-move {
+            0% { left: 20%; top: 20%; }
+            25% { left: 80%; top: 30%; }
+            50% { left: 70%; top: 70%; }
+            75% { left: 30%; top: 60%; }
+            100% { left: 20%; top: 20%; }
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: #9ca3af;
+        }
+
+        /* Alerts Panel */
+        .alerts-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .alert-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--warning);
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .alert-item.danger {
+            border-left-color: var(--danger);
+        }
+
+        .alert-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .alert-type {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+
+        .alert-time {
+            font-size: 0.75rem;
+            color: #9ca3af;
+        }
+
+        /* Live Feed */
+        .live-feed {
+            grid-column: 1 / -1;
+        }
+
+        .feed-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .feed-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .feed-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        /* Buttons */
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            letter-spacing: 0.05em;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7V12C2 16.5 4.5 20.5 8 22C8.5 21.5 9 21 9.5 20.5L12 18L14.5 20.5C15 21 15.5 21.5 16 22C19.5 20.5 22 16.5 22 12V7L12 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="12" cy="12" r="3" stroke="white" stroke-width="2"/>
+                </svg>
+                <h1>Humanitarian Drone Operations</h1>
+            </div>
+            <div class="status-bar">
+                <div class="status-item">
+                    <span class="status-indicator"></span>
+                    <span>System Online</span>
+                </div>
+                <div class="status-item">
+                    <span>🔋</span>
+                    <span id="battery-level">95%</span>
+                </div>
+                <div class="status-item">
+                    <span>📡</span>
+                    <span id="connection-status">Connected</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Mission Control Panel -->
+        <div class="panel">
+            <div class="panel-header">
+                <h2 class="panel-title">Mission Control</h2>
+                <button class="btn btn-primary" onclick="startMission()">Start Mission</button>
+            </div>
+            
+            <!-- Mission Map -->
+            <div class="mission-map">
+                <div class="map-overlay"></div>
+                <div class="drone-position" id="drone-marker"></div>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value" id="missions-today">12</div>
+                    <div class="stat-label">Missions Today</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="area-covered">47.3</div>
+                    <div class="stat-label">Hectares Covered</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="bulletins-synced">423</div>
+                    <div class="stat-label">Bulletins Synced</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="alerts-active">3</div>
+                    <div class="stat-label">Active Alerts</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alerts Panel -->
+        <div class="panel">
+            <div class="panel-header">
+                <h2 class="panel-title">Live Alerts</h2>
+                <span id="alert-count" style="color: #9ca3af;">3 active</span>
+            </div>
+            <div class="alerts-list" id="alerts-container">
+                <div class="alert-item danger">
+                    <div class="alert-header">
+                        <span class="alert-type">🔥 Fire Hazard</span>
+                        <span class="alert-time">2 min ago</span>
+                    </div>
+                    <div>Dense cooking area detected in Sector 7 - immediate inspection required</div>
+                </div>
+                <div class="alert-item">
+                    <div class="alert-header">
+                        <span class="alert-type">💊 Medical Supply</span>
+                        <span class="alert-time">15 min ago</span>
+                    </div>
+                    <div>Insulin shortage reported at Medical Tent 3</div>
+                </div>
+                <div class="alert-item">
+                    <div class="alert-header">
+                        <span class="alert-type">👥 Missing Person</span>
+                        <span class="alert-time">1 hour ago</span>
+                    </div>
+                    <div>Child missing - last seen near north gate</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Live Feed -->
+        <div class="panel live-feed">
+            <div class="panel-header">
+                <h2 class="panel-title">Real-Time Intelligence</h2>
+            </div>
+            <div class="feed-content">
+                <div class="feed-item">
+                    <div class="feed-icon">🌡️</div>
+                    <div>
+                        <div style="font-weight: 600;">Thermal Analysis</div>
+                        <div style="color: #9ca3af; font-size: 0.875rem;">No fever clusters detected</div>
+                    </div>
+                </div>
+                <div class="feed-item">
+                    <div class="feed-icon">🚰</div>
+                    <div>
+                        <div style="font-weight: 600;">Resource Status</div>
+                        <div style="color: #9ca3af; font-size: 0.875rem;">Water distribution at 67% efficiency</div>
+                    </div>
+                </div>
+                <div class="feed-item">
+                    <div class="feed-icon">📊</div>
+                    <div>
+                        <div style="font-weight: 600;">Population Density</div>
+                        <div style="color: #9ca3af; font-size: 0.875rem;">+127 new arrivals this week</div>
+                    </div>
+                </div>
+                <div class="feed-item">
+                    <div class="feed-icon">🤖</div>
+                    <div>
+                        <div style="font-weight: 600;">AI Analysis</div>
+                        <div style="color: #9ca3af; font-size: 0.875rem;">Camp conditions: STABLE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simulated real-time updates
+        let missionCount = 12;
+        let bulletinCount = 423;
+        let alertCount = 3;
+
+        // Update stats periodically
+        setInterval(() => {
+            // Randomly update values
+            if (Math.random() > 0.7) {
+                missionCount++;
+                document.getElementById('missions-today').textContent = missionCount;
+                
+                bulletinCount += Math.floor(Math.random() * 20) + 10;
+                document.getElementById('bulletins-synced').textContent = bulletinCount;
+                
+                const areaCovered = (missionCount * 3.9).toFixed(1);
+                document.getElementById('area-covered').textContent = areaCovered;
+            }
+            
+            // Update battery
+            const battery = Math.max(20, 95 - (missionCount * 2));
+            document.getElementById('battery-level').textContent = battery + '%';
+            
+        }, 5000);
+
+        // Simulate new alerts
+        const alertTypes = [
+            { icon: '🌡️', type: 'Fever Detected', severity: 'danger' },
+            { icon: '💧', type: 'Water Shortage', severity: 'warning' },
+            { icon: '👥', type: 'Missing Person', severity: 'warning' },
+            { icon: '🏠', type: 'Overcrowding', severity: 'warning' },
+            { icon: '⚡', type: 'Power Outage', severity: 'danger' }
+        ];
+
+        function addNewAlert() {
+            const alert = alertTypes[Math.floor(Math.random() * alertTypes.length)];
+            const alertsContainer = document.getElementById('alerts-container');
+            
+            const alertDiv = document.createElement('div');
+            alertDiv.className = `alert-item ${alert.severity === 'danger' ? 'danger' : ''}`;
+            alertDiv.innerHTML = `
+                <div class="alert-header">
+                    <span class="alert-type">${alert.icon} ${alert.type}</span>
+                    <span class="alert-time">just now</span>
+                </div>
+                <div>New ${alert.type.toLowerCase()} alert in Sector ${Math.floor(Math.random() * 8) + 1}</div>
+            `;
+            
+            alertsContainer.insertBefore(alertDiv, alertsContainer.firstChild);
+            
+            // Remove old alerts
+            while (alertsContainer.children.length > 5) {
+                alertsContainer.removeChild(alertsContainer.lastChild);
+            }
+            
+            alertCount++;
+            document.getElementById('alerts-active').textContent = alertCount;
+            document.getElementById('alert-count').textContent = `${alertCount} active`;
+        }
+
+        // Add new alert every 30-60 seconds
+        setInterval(() => {
+            if (Math.random() > 0.5) {
+                addNewAlert();
+            }
+        }, 45000);
+
+        function startMission() {
+            alert('Mission deployment requires hardware connection. Please run docker-compose up for full functionality.');
+        }
+
+        // Add connection to WebSocket for real updates in production
+        // const socket = io('http://localhost:8001');
+        // socket.on('new_alert', (data) => { ... });
+    </script>
+</body>
+</html>

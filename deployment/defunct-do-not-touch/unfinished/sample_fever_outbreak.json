@@ -1,0 +1,231 @@
+{
+  "mission_id": "disease_survey_20241215_1432",
+  "timestamp": "2024-12-15T14:32:47Z",
+  "mission_type": "disease_monitoring",
+  "drone_id": "HDIS-001",
+  "analysis_model": "gemma-3n-15b",
+  "flight_duration_minutes": 22,
+  "area_covered_hectares": 10.2,
+  
+  "thermal_scan_results": {
+    "total_individuals_scanned": 4832,
+    "average_temperature": 36.7,
+    "temperature_range": {
+      "min": 35.2,
+      "max": 39.8
+    },
+    "scan_resolution": "5m_grid",
+    "confidence_score": 0.92
+  },
+  
+  "fever_clusters_detected": [
+    {
+      "cluster_id": "FC_001",
+      "location": {
+        "sector": "7",
+        "subsector": "NW",
+        "gps": {
+          "latitude": 32.4589,
+          "longitude": 35.8967
+        },
+        "description": "Dense housing area near communal kitchen"
+      },
+      "severity": "HIGH",
+      "affected_individuals": {
+        "confirmed": 31,
+        "suspected": 14,
+        "total_estimate": 45
+      },
+      "temperature_profile": {
+        "avg_fever_temp": 38.9,
+        "highest_recorded": 39.8,
+        "pattern": "clustered_transmission"
+      },
+      "environmental_factors": {
+        "housing_density": "very_high",
+        "ventilation": "poor",
+        "water_access": "limited",
+        "sanitation_score": 3.2
+      }
+    },
+    {
+      "cluster_id": "FC_002", 
+      "location": {
+        "sector": "4",
+        "subsector": "E",
+        "gps": {
+          "latitude": 32.4601,
+          "longitude": 35.8989
+        },
+        "description": "New arrivals processing area"
+      },
+      "severity": "MEDIUM",
+      "affected_individuals": {
+        "confirmed": 8,
+        "suspected": 4,
+        "total_estimate": 12
+      },
+      "temperature_profile": {
+        "avg_fever_temp": 38.3,
+        "highest_recorded": 38.7,
+        "pattern": "isolated_cases"
+      },
+      "environmental_factors": {
+        "housing_density": "medium",
+        "ventilation": "adequate",
+        "water_access": "good",
+        "sanitation_score": 6.8
+      }
+    }
+  ],
+  
+  "ai_analysis": {
+    "summary": "Critical disease outbreak detected requiring immediate medical intervention. Thermal imaging reveals two distinct fever clusters with characteristics consistent with rapid viral transmission. The primary cluster in Sector 7 shows concerning environmental conditions that accelerate disease spread.",
+    
+    "disease_assessment": {
+      "outbreak_probability": 0.87,
+      "transmission_rate": "high",
+      "likely_pathogens": [
+        "Influenza (67% probability)",
+        "COVID-19 variant (22% probability)",
+        "Other respiratory infection (11% probability)"
+      ],
+      "incubation_estimate": "24-48 hours based on cluster pattern"
+    },
+    
+    "risk_factors": {
+      "primary": [
+        "Extreme overcrowding in Sector 7 (312% above recommended density)",
+        "Poor ventilation in affected housing blocks",
+        "Shared cooking facilities serving as transmission vector",
+        "Limited access to handwashing stations"
+      ],
+      "secondary": [
+        "Recent influx of 127 new arrivals increasing density",
+        "Seasonal temperature drop driving indoor clustering",
+        "Medical supplies already strained from previous week"
+      ]
+    },
+    
+    "spread_prediction": {
+      "24_hours": {
+        "new_cases_estimate": "60-85",
+        "sectors_at_risk": ["6", "8"],
+        "confidence": 0.81
+      },
+      "48_hours": {
+        "new_cases_estimate": "150-220",
+        "sectors_at_risk": ["5", "6", "8", "3"],
+        "confidence": 0.73
+      },
+      "72_hours": {
+        "new_cases_estimate": "300-450",
+        "camp_wide_risk": "HIGH",
+        "confidence": 0.65
+      }
+    },
+    
+    "resource_requirements": {
+      "immediate": {
+        "medical_personnel": 8,
+        "isolation_tents": 10,
+        "n95_masks": 5000,
+        "hand_sanitizer": "200L",
+        "fever_reducers": "2000 doses",
+        "iv_fluids": "100 bags"
+      },
+      "24_hour": {
+        "additional_medical_staff": 12,
+        "testing_kits": 500,
+        "antibiotics": "prophylactic supply for 1000",
+        "oxygen_concentrators": 5
+      }
+    }
+  },
+  
+  "recommendations": {
+    "immediate_actions": [
+      {
+        "priority": 1,
+        "action": "Deploy emergency medical team to Sector 7",
+        "deadline": "2 hours",
+        "resources": "8 medical personnel, mobile clinic"
+      },
+      {
+        "priority": 2,
+        "action": "Establish quarantine zone in overflow area",
+        "deadline": "4 hours",
+        "resources": "10 isolation tents, barriers"
+      },
+      {
+        "priority": 3,
+        "action": "Distribute masks to all Sector 7 residents",
+        "deadline": "6 hours",
+        "resources": "5000 N95 masks"
+      },
+      {
+        "priority": 4,
+        "action": "Set up additional handwashing stations",
+        "deadline": "8 hours",
+        "resources": "20 stations, 500L water reserve"
+      }
+    ],
+    
+    "medium_term_actions": [
+      "Implement daily thermal screening for all camp residents",
+      "Relocate 200 individuals from Sector 7 to reduce density",
+      "Establish temporary outdoor cooking areas to reduce indoor gathering",
+      "Create dedicated isolation ward with 50-bed capacity",
+      "Coordinate with WHO for vaccine availability"
+    ],
+    
+    "communication_plan": {
+      "camp_announcement": "Health alert via loudspeakers in local languages",
+      "aid_agencies": "Emergency briefing scheduled 16:00",
+      "government_liaison": "Ministry of Health notified",
+      "media_guidance": "Prepared statement emphasizing rapid response"
+    }
+  },
+  
+  "supporting_data": {
+    "weather_conditions": {
+      "temperature": 12,
+      "humidity": 45,
+      "wind_speed": 8,
+      "forecast": "Cold nights continuing, increasing indoor clustering"
+    },
+    "historical_context": {
+      "last_outbreak": "2024-03-22",
+      "type": "Gastroenteritis", 
+      "affected": 234,
+      "duration_days": 12
+    },
+    "camp_capacity": {
+      "medical_beds": "40 (35 occupied)",
+      "isolation_capacity": "20 (5 occupied)",
+      "medical_staff": "12 (requesting 20 additional)"
+    }
+  },
+  
+  "alert_status": {
+    "level": "CRITICAL",
+    "distribution": [
+      "Camp Management",
+      "Medical Coordinator",
+      "UNHCR Health Unit",
+      "MSF Rapid Response",
+      "Government Health Ministry"
+    ],
+    "follow_up": "Thermal scan scheduled in 6 hours"
+  },
+  
+  "validation": {
+    "ground_truth_verification": "Medical team dispatched for manual verification",
+    "secondary_indicators": [
+      "Increased medical tent visits past 48 hours",
+      "Pharmacy reporting elevated paracetamol distribution",
+      "Community health workers flagged respiratory symptoms"
+    ],
+    "confidence_rating": "HIGH (0.89)"
+  }
+}
