@@ -1,0 +1,4 @@
+On server device Pi Geekom or Minipc
+
+chmod +x build-complete-server.sh
+./build-complete-server.sh
