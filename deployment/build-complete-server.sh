@@ -1,8 +1,36 @@
 #!/bin/bash
 # Build Complete AI Server with all endpoints from scratch
-# Run this script on the Dell Mini PC
+# Run this AFTER setup-dependencies.sh to deploy server code
+# Run this script on the server hardware (Ubuntu preferred)
+
+set -e
 
 echo "🚀 Building complete AI server from scratch..."
+
+# Check if dependencies are installed
+INSTALL_DIR="/opt/refugee-connect"
+CONFIG_FILE="$INSTALL_DIR/config/environment.conf"
+
+if [ ! -f "$CONFIG_FILE" ]; then
+    echo "❌ ERROR: Dependencies not installed!"
+    echo "   Please run setup-dependencies.sh first:"
+    echo "   ./setup-dependencies.sh"
+    exit 1
+fi
+
+# Load environment configuration
+source "$CONFIG_FILE"
+echo "✅ Environment detected: $ENVIRONMENT ($TOTAL_RAM_GB GB RAM)"
+
+# Activate virtual environment
+if [ -f "$VENV_PATH/bin/activate" ]; then
+    source "$VENV_PATH/bin/activate"
+    echo "✅ Virtual environment activated"
+else
+    echo "❌ ERROR: Virtual environment not found at $VENV_PATH"
+    echo "   Please run setup-dependencies.sh first"
+    exit 1
+fi
 
 # Stop the current service
 echo "🛑 Stopping current service..."
