@@ -1,5 +1,5 @@
 # Google-Connect-
-Offline AI Humanitarian Toolkit
+Offline AI Humanitarian Toolkit 
 
 Google Connect provides AI-powered humanitarian assistance that operates completely offline in crisis zones. The system uses a portable AI server carried by humanitarian workers to serve refugees and displaced persons who lack reliable internet access.
 
